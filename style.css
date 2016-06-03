@@ -281,6 +281,8 @@ h1{
 }
 
 .mail a{
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 500;
     color:#62B4C6;
 }
 .mail:hover a{
@@ -853,8 +855,12 @@ p{
 }
 
 
+.mutandaesection{
+     background-position: -20px;   
+}
 .mutandaesection:hover #mutandae{
     background-image: url(img/mutandae/home.png);
+    background-position: -20px;
 }
 
 .mutandaesection:hover .special{
@@ -1100,7 +1106,7 @@ p{
     width: 50%;
     height: 300px;
     
-    background-position: left;
+    background-position: -20px;
 }
 
 
@@ -1175,7 +1181,7 @@ article{
 }    
     
 .aboutsection{
-    margin:35% 0 5% 20px;  
+    margin:30% 0 0 20px;  
 }
     
 p{
@@ -1198,13 +1204,13 @@ p{
 /********************************** WORK *********************************/ 
 
 .work{
-   margin-top: 40%; 
+   margin-top: 180px; 
 }
     
     
 .projectsection{
     
-    margin-left: 0px;
+    margin:50px 0;
     
     flex-flow: column;
     justify-content: center;
@@ -1213,14 +1219,13 @@ p{
 
 .projectinfo{
     width:90%;
-    margin:100px 0 0 0;
 } 
 
 #atm{
     width: 100%;
     height: 300px;
     
-    margin-top:0px;
+    margin-top:-10px;
     
     order: 1;
 }
@@ -1253,11 +1258,11 @@ p{
     width: 100%;
     height: 300px;
     
-    margin-top:0px;
+    margin-top:-10px;
     
     order: 1;
     
-    background-position: center;
+    background-position: -20px;
 }
 
 
@@ -1265,7 +1270,7 @@ p{
     width: 100%;
     height: 300px;
     
-    margin-top:0px;
+    margin-top:-10px;
     
     order: 1;
     
