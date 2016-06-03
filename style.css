@@ -983,7 +983,7 @@ nav{
 
 .contacts{
     position:absolute;
-    bottom:5%;
+    bottom:7%;
 }
 
 h1{
@@ -1036,7 +1036,7 @@ article{
 }
     
 p{
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .title{
@@ -1150,6 +1150,10 @@ nav ul li{
 .myname{
     display: none;
 }
+ 
+.contacts{
+    bottom:3%;
+}
     
 .avatar{
     position: fixed;
@@ -1181,7 +1185,7 @@ article{
 }    
     
 .aboutsection{
-    margin:30% 0 0 20px;  
+    margin:70px 0 30px 20px;  
 }
     
 p{
