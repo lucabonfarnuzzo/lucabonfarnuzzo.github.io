@@ -281,8 +281,6 @@ h1{
 }
 
 .mail a{
-    font-family: "Source Code Pro", sans-serif;
-    font-weight: 300;
     color:#62B4C6;
 }
 .mail:hover a{
@@ -319,7 +317,7 @@ h1{
 
 .cv a{
     font-family: "Source Code Pro", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     color:#62B4C6;
 }
 .cv:hover a{
@@ -895,7 +893,7 @@ header {
 
 
 nav{
-    margin:25px auto;
+    margin:15px auto;
 }
 
     
@@ -1170,10 +1168,6 @@ nav ul li{
 }
     
     
-.nav{
-    margin: 25px 0 0 20px;
-}
-    
     /********************************** ABOUT *********************************/
     
 article{
@@ -1182,6 +1176,10 @@ article{
     
 .aboutsection{
     margin:35% 0 5% 20px;  
+}
+    
+p{
+    font-size: 1em;
 }
     
 .arrow{
