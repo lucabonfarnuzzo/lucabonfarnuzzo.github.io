@@ -359,9 +359,9 @@ h1{
 }
 
 article{
-    width:80%;
+    width:75%;
     
-    margin-left:20%;
+    margin-left:25%;
     margin-top: 250px;
     
     z-index: -1;
@@ -373,7 +373,7 @@ article{
 
 
 p{
-    width:60%;
+    width:80%;
     
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -381,7 +381,7 @@ p{
 .arrow{
     width: 20px;
     
-    margin-left: 55%;
+    margin-left: 75%;
 }
 
 .infodata{
@@ -471,7 +471,7 @@ p{
 
 .work{
     margin-top: 250px;
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 .projectsection{
@@ -654,6 +654,107 @@ h3{
 
 .spsection:hover .see{
     visibility: visible;
+}
+
+
+/********************************** PROJECT *********************************/
+
+.projectback{
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    width: 20%;
+    height: 100vh;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+        
+    background-image: url(img/atm/background.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projectlogo{
+    width: 100%;
+    height:60px;
+    
+    margin-bottom: 50%;
+    
+    background-image: url(img/atm/atm-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.projectdata{
+    margin-left: 30px;
+    margin-bottom:55px;
+}
+
+.white{
+    color: white;
+}
+
+.tools{
+    width: 100%;
+    height: 40px;
+    
+    margin: -10px;
+    
+    background-image: url(img/atm/atm-tools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.explanation{
+    margin-left: 30px;
+}
+
+.img{
+    margin-left: 30px;
+    
+    width: 80%;
+}
+
+/************* ATM ***************/
+
+.atm-personas{
+    height: 300px;
+    
+    background-image: url(img/atm/personas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.atm-task{
+    height: 350px;
+    margin: 40px 30px;
+    
+    background-image: url(img/atm/task-flow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.atm-zones{
+    height: 700px;
+    margin: -130px 30px;
+    
+    background-image: url(img/atm/atm-zones.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.atmvideo{
+    width: 80%;
+    margin-left: 2%;
+    padding-bottom:100px;
 }
 
 /*********************************** MEDIA (iPad) **********************************/
@@ -880,6 +981,63 @@ p{
 
 .spsection:hover .special{
     color: #62B4C6;
+}
+    
+
+/********************************** PROJECT *********************************/
+
+.projectback{
+    width: 36%;
+}
+
+.projectlogo{
+    width: 90%;
+    height:80px;
+    
+    margin-bottom: 40%;
+}
+
+.projectdata{
+    margin-left: 30px;
+    margin-bottom:55px;
+}
+
+.tools{
+    width: 70%;
+    height: 40px;
+    
+    margin: -10px;
+}
+
+.explanation{
+    margin-left: 30px;
+}
+
+.img{
+    margin-left: 30px;
+    
+    width: 90%;
+}
+
+/************* ATM ***************/
+
+.atm-personas{
+    height: 200px;
+}
+
+.atm-task{
+    height: 300px;
+    margin: 0 30px;
+}
+
+.atm-zones{
+    height: 500px;
+    margin: -80px 30px;
+}
+
+.atmvideo{
+    width: 90%;
+    padding-bottom:100px;
 }
 
 
@@ -1115,6 +1273,77 @@ p{
     height: 300px;
     
     background-position: left;
+}
+    
+/********************************** PROJECT *********************************/
+
+.projectback{
+    position: relative;
+    left: 0;
+    top: 0;
+    
+    width: 100vw;
+    height: 100vh;
+    
+    background-image: url(img/atm/background2.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projectlogo{
+    width: 100%;
+    height:70px;
+    
+    margin:5% auto ;
+}
+
+.projectdata{
+    margin-left: 30px;
+    margin-bottom:20px;
+}
+    
+.white{
+    line-height: .5;
+}
+
+.tools{
+    width: 20%;
+    height: 40px;
+    
+    margin: 0;
+}
+
+.explanation{
+    margin-left: 20px;
+}
+
+.img{
+    margin-left: 0px;
+    
+    width: 95%;
+}
+
+/************* ATM ***************/
+
+.atm-personas{
+    height: 230px;
+}
+
+.atm-task{
+    height: 350px;
+    margin: 40px 30px;
+}
+
+.atm-zones{
+    height: 400px;
+    margin: 0px 30px;
+}
+
+.atmvideo{
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom:50px;
 }
 
 }
