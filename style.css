@@ -1378,7 +1378,7 @@ nav ul li{
 }
  
 .contacts{
-    bottom:2%;
+    bottom:1%;
 }
     
 .avatar{
@@ -1387,7 +1387,7 @@ nav ul li{
     right: -85px;
     width: 85%;
     overflow: hidden;
-    opacity: 0.1;
+    opacity: 0.4;
 }
     
 .logo-container.top{
