@@ -368,7 +368,7 @@ article{
 }
 
 .aboutsection{
-    margin:5% 0 30% 30px;  
+    margin:5% 0 25% 30px;  
 }
 
 
@@ -436,13 +436,16 @@ p{
 }
 
 .portabarrette{
+    height: 30px;
+    margin: 20px 0;
+    
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
 
 .barrette{
-    width: 15px;
+    width: 4px;
     height: 4px;
     margin: 5px 5px;
     
@@ -457,7 +460,7 @@ p{
 }
 
 .portabarrette:hover .barrette{
-    width: 50px;
+    width: 33px;
     
     transition: width 1s ease .1s;
 }
@@ -465,7 +468,7 @@ p{
 .portabarrette:hover .short{
     color:#EF7E64;
     
-    transition:color .1s ease .1s;
+    transition:color .1s ease 0;
 }
 
 
