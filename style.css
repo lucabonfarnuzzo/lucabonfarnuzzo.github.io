@@ -1367,7 +1367,8 @@ nav ul li{
 .intro{
     width:300px;
     
-    margin:70% auto;
+    margin-top: 70%;
+    margin-left:auto;
 }
 
     /*******************************CONTACT *********************************/
@@ -1377,7 +1378,7 @@ nav ul li{
 }
  
 .contacts{
-    bottom:3%;
+    bottom:2%;
 }
     
 .avatar{
@@ -1530,8 +1531,8 @@ p{
 }
 
 .projectdata{
-    margin-left: 30px;
-    margin-bottom:45px;
+    margin-left: 20px;
+    margin-bottom:55px;
 }
     
 .white{
