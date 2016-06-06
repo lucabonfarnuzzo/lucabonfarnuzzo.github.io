@@ -1378,7 +1378,7 @@ nav ul li{
 }
  
 .contacts{
-    bottom:1%;
+    bottom:50px;
 }
     
 .avatar{
@@ -1532,7 +1532,7 @@ p{
 
 .projectdata{
     margin-left: 20px;
-    margin-bottom:60px;
+    margin-bottom:70px;
 }
     
 .white{
