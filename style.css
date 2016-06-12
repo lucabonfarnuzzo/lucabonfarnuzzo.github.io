@@ -1420,6 +1420,11 @@
 
  .sams-graphics {
      height: 90px;
+     
+     background-image: url(img/samsung/sams-graphics2.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
  }
 
  .sams-families {
