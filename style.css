@@ -1,1604 +1,1453 @@
- *{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-
-body{
-    margin: 0;
-    background-color: white /*#F0F0F0*/;
-}
-
-
-h1,h2,h3,h4,h5,h6,li{
-    font-family: "Source Code Pro", sans-serif;
-    color: #565656;
-}
-
-p{
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #565656;
-    
-    font-weight: 100;
-    
-    line-height: 1.7em;
-}
-
-.backhead{
-    position: fixed;
-    top: 0;
-    right: 0;
-    
-    width: 80%;
-    height: 80px;
-    
-    background-color: white;  
-    
-    z-index: 0;
-}
-/********************************** HOME *********************************/
-
-.home{
-    width: 100vw;
-    height:100vh;
-    
-    background-color: white;
-}
-
-
-header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    
-    z-index: 2;
-}
-
-
-nav{
-    margin: 20px 15px 0 0;
-}
-
-
-ul{
-    padding-left: 0;
-}
-
-
-nav ul li{
-    width: 150px;
-    
-    display: inline-block;
-    text-align: center;
-    
-    font-size: 14px;
-}
-
-
-a{
-    text-decoration: none;
-    color: #3f3f3f;
-    
-    font-weight: 300;
-}
-
-
-nav ul li a:hover{
-    color: #EF7E64;
-}
-
-
-.worknav{
-    border-left: 1px solid #646464;
-    border-right: 1px solid #646464;
-}
-
-
-.intro{
-    width:500px;
-    
-    position:absolute;
-    bottom:20%;
-    left:20px;
-    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-.logo-container{
-    width: 80px;
-    height: 80px;
-    
-    margin: 30px;
-    
-    background-color: #62B4C6;
-    border-radius: 50%;
-}
-
-
-.logo{
-    width: 80px;
-    height: 80px;   
-}
-
-
-h4{
-    font-size: 14px;
-    font-weight: 300;
-}
-
-
-.subtitle{
-    visibility: hidden; 
-    
-    position:absolute;
-    bottom:15%;
-    left:140px;
-    
-    color: #EF7E64;
-}
-
-
-.intro:hover .logo-container{
-    background-color: #EF7E64;
-}
-.intro:hover .subtitle{
-    visibility: visible;
-}
-
-
-.home-title{
-    height: 25px;
-    margin-top:-20px;
-    
-    overflow: hidden;
-}
-
-
-h2{
-    display: inline;
-    
-    font-size: 18px;
-    font-weight: 300;
-}
-
-
-.changing{
-    margin-top:-31px;
-    padding-left: 100px;
-    
-    list-style: none;
-    
-    font-size: 18px;
-    font-weight: 500;
-    
-    animation:12s linear 1.5s normal forwards infinite carousel;
-}
-
-
-.changing li {
-    line-height:40px;
-    margin:0;
-}
-
-
-@keyframes carousel {
-  0%, 12%, 100%   {transform:translateY(0);}
-  17%,29%  {transform:translateY(-25%);}
-  34%,46%  {transform:translateY(-50%);}
-  51%,63%  {transform:translateY(-75%);}
-  68%,80%  {transform:translateY(-50%);}
-  85%,97%  {transform:translateY(-25%);}
-}
-
-
-/********************************** CONTACT *********************************/
-
-.head {
-    width: 100%;
-    
-    position: fixed;
-    top:0;
-    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    
-    z-index: 2;
-}
-
-
-.logo-container.top{
-    width: 50px;
-    height: 50px;
-    
-    margin: 20px 30px;
-}
-
-
-.logo.top{
-    width: 50px;
-    height: 50px;   
-}
-
-
-.me{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-
-
-.me:hover .logo-container{
-    background-color: #EF7E64;
-}
-
-.myname{
-    color: black;
-    
-    /*text-shadow:0px 0px 5px #f0f0f0;*/
-}
-
-.selected{
-    font-weight: 300;
-    text-decoration: line-through;
-    color: #EF7E64;
-}
-
-
-.contacts{
-    position:absolute;
-    bottom:7%;
-}
-
-h1{
-    margin: 30px;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.mail{
-    width: 600px;
-    height: 40px;
-    
-    margin: 20px 30px;
-    padding-left:80px;
-    
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 40px;
-    color: ##565656;
-    
-    background-image:url(img/busta.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-}
-
-.mail a{
-    font-family: "Source Code Pro", sans-serif;
-    font-weight: 500;
-    color:#62B4C6;
-}
-.mail:hover a{
-    color:#EF7E64;
-}
-
-.mail:hover{
-    background-image:url(img/busta2.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-}
-
-
-
-.cv{
-    width: 600px;
-    height: 40px;
-    
-    margin: 20px 30px;
-    padding-left:80px;
-    
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 40px;
-    color: ##565656;
-    
-    background-image:url(img/graffetta.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-}
-
-.cv a{
-    font-family: "Source Code Pro", sans-serif;
-    font-weight: 500;
-    color:#62B4C6;
-}
-.cv:hover a{
-    color:#EF7E64;
-}
-
-.cv:hover{
-    background-image:url(img/graffetta2.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-}
-
-
-.avatar{
-    position: fixed;
-    bottom: -25px;
-    right: -5px;
-    width: 25%;
-}
-
-
-/********************************** ABOUT *********************************/
-
-.picofme{
-    position: fixed;
-    left: 0;
-    top: 0;
-    
-    width: 20%;
-    height: 100vh;
-    
-    background-image: url(img/io.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-article{
-    width:75%;
-    
-    margin-left:25%;
-    margin-top: 250px;
-    
-    z-index: -1;
-}
-
-.aboutsection{
-    margin:5% 0 25% 30px;  
-}
-
-
-p{
-    width:80%;
-    
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.arrow{
-    width: 20px;
-    
-    margin-left: 75%;
-}
-
-.infodata{
-    margin: 0;
-}
-
-.title{
-    margin-top: 30px;
-    margin-bottom: 0;
-}
-
-.programicon{
-    width: 100px;
-}
-
-.flag{
-    margin-top: 10px;
-}
-
-.allskills{
-    width:80%;
-    
-    margin-top: 30px;
-    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.family{
-    margin-bottom: 10px;
-    
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-/********************************** WORK *********************************/ 
-
-.navwrapper{
-    position: fixed;
-    left: 30px;
-    top: 0px;
-    
-    width: 20%;
-    height: 100vh;
-    
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    
-}
-
-.portabarrette{
-    height: 30px;
-    margin: 20px 0;
-    
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-
-.barrette{
-    width: 4px;
-    height: 4px;
-    margin: 5px 5px;
-    
-    background-color:lightgray;
-    
-    transition: width 2s ease .1s;
-}
-
-.short{
-    font-size: 13px;
-    
-}
-
-.portabarrette:hover .barrette{
-    width: 33px;
-    
-    transition: width 1s ease .1s;
-}
-
-.portabarrette:hover .short{
-    color:#EF7E64;
-    
-    transition:color .1s ease 0;
-}
-
-
-.work{
-    margin-top: 250px;
-    margin-left: 25%;
-}
-
-.projectsection{
-    width: 100%;
-    
-    margin: 2% 0 20% 0;
-    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items:center;
-}
-
-.projectinfo{
-    width: 40%;
-    
-    padding-left: 20px;
-    border-left: 1px solid lightgrey;
-}
-
-.special{
-    font-weight: 500;
-    letter-spacing: 1px;
-    color:#62B4C6;
-}
-
-h3{
-    font-size:16px;
-    line-height: 2;
-}
-
-.see{
-    visibility: hidden;
-    color: #EF7E64;
-    
-    padding: 0;
-    margin: 5px 0 0 0;
-}
-
-#atm{
-    width: 50%;
-    height: 400px;
-    
-    margin: 0;
-    
-    background-image: url(img/atm/atm-home.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-}
-
-
-.atmsection:hover #atm{
-    background-image: url(img/atm/atm.gif);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-}
-
-.atmsection:hover .special{
-    color: #EF7E64;
-}
-
-.atmsection:hover .see{
-    visibility: visible;
-}
-
-
-
-#samsung{
-    width: 50%;
-    height: 400px;
-    
-    margin: 0;
-    
-    background-image: url(img/samsung/Samsung-landing.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-}
-
-
-.samsungsection:hover #samsung{
-    background-image: url(img/samsung/Samsung.gif);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-}
-
-.samsungsection:hover .special{
-    color: #EF7E64;
-}
-
-.samsungsection:hover .see{
-    visibility: visible;
-}
-
-
-#tokyo{
-    width: 50%;
-    height: 600px;
-    
-    margin: 0;
-    
-    background-image: url(img/typography/landing.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-}
-
-
-.tokyosection:hover #tokyo{
-    background-image: url(img/typography/tokyo.gif);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-}
-
-.tokyosection:hover .special{
-    color: #EF7E64;
-}
-
-.tokyosection:hover .see{
-    visibility: visible;
-}
-
-
-#mutandae{
-    width: 50%;
-    height: 400px;
-    
-    margin: 0;
-    
-    background-image: url(img/mutandae/home.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-}
-
-
-.mutandaesection:hover #mutandae{
-    background-image: url(img/mutandae/mutandae.gif);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-}
-
-.mutandaesection:hover .special{
-    color: #EF7E64;
-}
-
-.mutandaesection:hover .see{
-    visibility: visible;
-}
-
-
-#sp{
-    width: 50%;
-    height: 300px;
-    
-    margin: 0;
-    
-    background-image: url(img/sp/sp-guado.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: right;
-}
-
-
-.spsection:hover #sp{
-    background-image: url(img/sp/sp.gif);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: right;
-}
-
-.spsection:hover .special{
-    color: #EF7E64;
-}
-
-.spsection:hover .see{
-    visibility: visible;
-}
-
-
-/********************************** PROJECT *********************************/
-
-.projectback{
-    position: fixed;
-    left: 0;
-    top: 0;
-    
-    width: 20%;
-    height: 100vh;
-    
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-        
-    background-image: url(img/atm/background.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.projectlogo{
-    width: 100%;
-    height:60px;
-    
-    margin-bottom: 50%;
-    
-    background-image: url(img/atm/atm-logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.projectdata{
-    margin-left: 30px;
-    margin-bottom:55px;
-}
-
-.white{
-    color: white;
-}
-
-.tools{
-    width: 100%;
-    height: 40px;
-    
-    margin: -10px;
-    
-    background-image: url(img/atm/atm-tools.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.explanation{
-    margin-left: 30px;
-}
-
-.img{
-    margin-left: 30px;
-    
-    width: 80%;
-}
-
-/************* ATM ***************/
-
-.atm-personas{
-    height: 300px;
-    
-    background-image: url(img/atm/personas.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.atm-task{
-    height: 350px;
-    margin: 40px 30px;
-    
-    background-image: url(img/atm/task-flow.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.atm-zones{
-    height: 700px;
-    margin: -100px 30px;
-    
-    background-image: url(img/atm/atm-zones.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.atmvideo{
-    width: 80%;
-    margin-left: 2%;
-    padding-bottom:100px;
-}
-
-/*********************************** MEDIA (iPad) **********************************/
-
-@media (max-width: 1100px){
-
-    /********************************** HOME *********************************/    
-   
-nav ul li a:hover{
-    text-decoration: none;
-    color:#565656;
-}
-    
-.intro:hover .logo-container{
-    background-color: #62B4C6;
-}
-    
-.intro:hover .subtitle{
-    visibility: hidden;
-}
-    
-    
-    /********************************** CONTACT *********************************/    
-.mail:hover a{
-    color:#62B4C6;
-}
-.cv:hover a{
-    color:#62B4C6;
-}
-
-.me:hover .logo-container{
-    background-color: #62B4C6;
-
-}
-
-.contacts{
-    bottom:5%;
-}
-    
-.mail:hover{
-    background-image:url(img/busta.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-}
-    
-.cv:hover{
-    background-image:url(img/graffetta.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-}
-    
-    /********************************** ABOUT *********************************/
-
-.picofme{ 
-    width: 36%;
-}
-    
-.backhead{
-    width: 100%;
-    height: 80px;
-}
-    
-article{
-    width:64%;
-    
-    margin-left:36%;
-    margin-top: 250px;
-}
-
-.aboutsection{
-    margin:5% 0 20% 30px;
-}
-
-
-p{
-    width:90%;
-    
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.arrow{
-    width: 20px;
-    
-    margin-left: 90%;
-}
-
-.programicon{
-    width: 100px;
-}
-
-.allskills{
-    width:400px;
-    
-    margin-top: 30px;
-    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-    
-/********************************** WORK *********************************/ 
-
-.navwrapper{
-    left: 30px;
-    top: 0px;
-    
-    width: 10%;
-}
-
-.barrette{
-    width: 30px;
-    height: 1px;
-    margin: 5px 5px;
-}
-
-
-.portabarrette:hover .barrette{
-    width: 30px;
-}
-
-.portabarrette:hover .short{
-    color:#565656;
-}
-
-
-.work{
-    width: 80%;
-    margin-left: 20%;
-    margin-top: 250px;
-}
-
-.projectsection{
-    width: 100%;
-    
-    margin:20px 0;
-    
-    justify-content: flex-start;
-}
-
-.projectinfo{
-    width:35%;    
-}   
-    
-.special{
-    font-weight: 500;
-    letter-spacing: 1px;
-    color:#62B4C6;
-}
-
-.see{
-    display: none;
-}
-
-#atm{
-    width: 65%;
-    height: 400px;
-}
-
-.atmsection:hover #atm{
-    background-image: url(img/atm/atm-home.png);
-}
-
-.atmsection:hover .special{
-    color: #62B4C6;
-}
-
-#samsung{
-    width: 65%;
-    height: 400px;
-}
-
-
-.samsungsection:hover #samsung{
-    background-image: url(img/samsung/Samsung-landing.png);
-}
-
-.samsungsection:hover .special{
-    color: #62B4C6;
-}
-
-#tokyo{
-    width: 65%;
-    height: 500px;
-}
-
-.tokyosection:hover #tokyo{
-    background-image: url(img/typography/landing.png);
-}
-
-.tokyosection:hover .special{
-    color: #62B4C6;
-}
-
-#mutandae{
-    width: 65%;
-    height: 400px;
-}
-
-
-.mutandaesection{
-     background-position: -20px;   
-}
-.mutandaesection:hover #mutandae{
-    background-image: url(img/mutandae/home.png);
-    background-position: -20px;
-}
-
-.mutandaesection:hover .special{
-    color: #62B4C6;
-}
-
-
-#sp{
-    width: 65%;
-    height: 300px;
-}
-
-
-.spsection:hover #sp{
-    background-image: url(img/sp/sp-guado.jpg);
-}
-
-.spsection:hover .special{
-    color: #62B4C6;
-}
-    
-
-/********************************** PROJECT *********************************/
-
-.projectback{
-    width: 36%;
-}
-
-.projectlogo{
-    width: 90%;
-    height:80px;
-    
-    margin-bottom: 40%;
-}
-
-.projectdata{
-    margin-left: 30px;
-    margin-bottom:55px;
-}
-
-.tools{
-    width: 70%;
-    height: 40px;
-    
-    margin: -10px;
-}
-
-.explanation{
-    margin-left: 30px;
-}
-
-.img{
-    margin-left: 30px;
-    
-    width: 90%;
-}
-
-/************* ATM ***************/
-
-.atm-personas{
-    height: 200px;
-}
-
-.atm-task{
-    height: 300px;
-    margin: 0 30px;
-}
-
-.atm-zones{
-    height: 500px;
-    margin: -80px 30px;
-}
-
-.atmvideo{
-    width: 90%;
-    padding-bottom:70px;
-}
-
-
-}
-/********************************** MEDIA (mobile landscape) *********************************/
-
-@media (max-width: 736px){
-    
-.backhead {
-    height: 90px;
-}
-    /********************************** HOME *********************************/
-header {
-    width: 100%;
-    justify-content: center; 
-}
-
-
-nav{
-    margin:15px auto;
-}
-
-    
-nav ul li{
-    width: 95px;
-    
-    font-size: 13px;
-}
-
-
-.intro{
-    width:300px;
-    
-    margin:0 auto;
-    
-    position:relative;
-    left:auto;
-    
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-    
-.logo-container{
-    width: 90px;
-    height: 90px;
-}
-
-
-.logo{
-    width: 90px;
-    height: 90px;   
-}
-
-
-.home-title{
-    margin-top:0px;
-}
-    
-    
-h2{
-    font-size: 16px;
-}
-    
-
-.changing{
-    margin-top:-30px;
-    padding-left: 90px;
-      
-    font-size: 16px;
-}
+ * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
  
-    /********************************** CONTACT *********************************/
+ body {
+     margin: 0;
+     background-color: white/*#F0F0F0*/
+     ;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ li {
+     font-family: "Source Code Pro", sans-serif;
+     color: #565656;
+ }
+ 
+ p {
+     font-family: 'Source Sans Pro', sans-serif;
+     color: #565656;
+     font-weight: 100;
+     line-height: 1.7em;
+ }
+ 
+ .backhead {
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 80%;
+     height: 80px;
+     background-color: white;
+     z-index: 0;
+ }
+ /********************************** HOME *********************************/
+ 
+ .home {
+     width: 100vw;
+     height: 100vh;
+     background-color: white;
+ }
+ 
+ header {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: flex-end;
+     z-index: 2;
+ }
+ 
+ nav {
+     margin: 20px 15px 0 0;
+ }
+ 
+ ul {
+     padding-left: 0;
+ }
+ 
+ nav ul li {
+     width: 150px;
+     display: inline-block;
+     text-align: center;
+     font-size: 14px;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: #3f3f3f;
+     font-weight: 300;
+ }
+ 
+ nav ul li a:hover {
+     color: #EF7E64;
+ }
+ 
+ .worknav {
+     border-left: 1px solid #646464;
+     border-right: 1px solid #646464;
+ }
+ 
+ .intro {
+     width: 500px;
+     position: absolute;
+     bottom: 20%;
+     left: 20px;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: flex-start;
+     align-items: center;
+ }
+ 
+ .logo-container {
+     width: 80px;
+     height: 80px;
+     margin: 30px;
+     background-color: #62B4C6;
+     border-radius: 50%;
+ }
+ 
+ .logo {
+     width: 80px;
+     height: 80px;
+ }
+ 
+ h4 {
+     font-size: 14px;
+     font-weight: 300;
+ }
+ 
+ .subtitle {
+     visibility: hidden;
+     position: absolute;
+     bottom: 15%;
+     left: 140px;
+     color: #EF7E64;
+ }
+ 
+ .intro:hover .logo-container {
+     background-color: #EF7E64;
+ }
+ 
+ .intro:hover .subtitle {
+     visibility: visible;
+ }
+ 
+ .home-title {
+     height: 25px;
+     margin-top: -20px;
+     overflow: hidden;
+ }
+ 
+ h2 {
+     display: inline;
+     font-size: 18px;
+     font-weight: 300;
+ }
+ 
+ .changing {
+     margin-top: -31px;
+     padding-left: 100px;
+     list-style: none;
+     font-size: 18px;
+     font-weight: 500;
+     animation: 12s linear 1.5s normal forwards infinite carousel;
+ }
+ 
+ .changing li {
+     line-height: 40px;
+     margin: 0;
+ }
+ 
+ @keyframes carousel {
+     0%,
+     12%,
+     100% {
+         transform: translateY(0);
+     }
+     17%,
+     29% {
+         transform: translateY(-25%);
+     }
+     34%,
+     46% {
+         transform: translateY(-50%);
+     }
+     51%,
+     63% {
+         transform: translateY(-75%);
+     }
+     68%,
+     80% {
+         transform: translateY(-50%);
+     }
+     85%,
+     97% {
+         transform: translateY(-25%);
+     }
+ }
+ /********************************** CONTACT *********************************/
+ 
+ .head {
+     width: 100%;
+     position: fixed;
+     top: 0;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+     z-index: 2;
+ }
+ 
+ .logo-container.top {
+     width: 50px;
+     height: 50px;
+     margin: 20px 30px;
+ }
+ 
+ .logo.top {
+     width: 50px;
+     height: 50px;
+ }
+ 
+ .me {
+     display: flex;
+     flex-flow: row wrap;
+     align-items: center;
+ }
+ 
+ .me:hover .logo-container {
+     background-color: #EF7E64;
+ }
+ 
+ .myname {
+     color: black;
+     /*text-shadow:0px 0px 5px #f0f0f0;*/
+ }
+ 
+ .selected {
+     font-weight: 300;
+     text-decoration: line-through;
+     color: #EF7E64;
+ }
+ 
+ .contacts {
+     position: absolute;
+     bottom: 7%;
+ }
+ 
+ h1 {
+     margin: 30px;
+     font-size: 24px;
+     font-weight: 500;
+ }
+ 
+ .mail {
+     width: 600px;
+     height: 40px;
+     margin: 20px 30px;
+     padding-left: 80px;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 40px;
+     color: ##565656;
+     background-image: url(img/busta.png);
+     background-repeat: no-repeat;
+     background-position: left;
+     background-size: contain;
+ }
+ 
+ .mail a {
+     font-family: "Source Code Pro", sans-serif;
+     font-weight: 500;
+     color: #62B4C6;
+ }
+ 
+ .mail:hover a {
+     color: #EF7E64;
+ }
+ 
+ .mail:hover {
+     background-image: url(img/busta2.png);
+     background-repeat: no-repeat;
+     background-position: left;
+     background-size: contain;
+ }
+ 
+ .cv {
+     width: 600px;
+     height: 40px;
+     margin: 20px 30px;
+     padding-left: 80px;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 40px;
+     color: ##565656;
+     background-image: url(img/graffetta.png);
+     background-repeat: no-repeat;
+     background-position: left;
+     background-size: contain;
+ }
+ 
+ .cv a {
+     font-family: "Source Code Pro", sans-serif;
+     font-weight: 500;
+     color: #62B4C6;
+ }
+ 
+ .cv:hover a {
+     color: #EF7E64;
+ }
+ 
+ .cv:hover {
+     background-image: url(img/graffetta2.png);
+     background-repeat: no-repeat;
+     background-position: left;
+     background-size: contain;
+ }
+ 
+ .avatar {
+     position: fixed;
+     bottom: -25px;
+     right: -5px;
+     width: 25%;
+ }
+ /********************************** ABOUT *********************************/
+ 
+ .picofme {
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 20%;
+     height: 100vh;
+     background-image: url(img/io.jpg);
+     background-position: left;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ article {
+     width: 75%;
+     margin-left: 25%;
+     margin-top: 250px;
+     margin-bottom: 50px;
+     z-index: -1;
+ }
+ 
+ .aboutsection {
+     margin: 5% 0 25% 30px;
+ }
+ 
+ p {
+     width: 80%;
+     font-family: 'Source Sans Pro', sans-serif;
+ }
+ 
+ .arrow {
+     width: 20px;
+     margin-left: 75%;
+ }
+ 
+ .infodata {
+     margin: 0;
+ }
+ 
+ .title {
+     margin-top: 30px;
+     margin-bottom: 0;
+ }
+ 
+ .programicon {
+     width: 100px;
+ }
+ 
+ .flag {
+     margin-top: 10px;
+ }
+ 
+ .allskills {
+     width: 80%;
+     margin-top: 30px;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+ }
+ 
+ .family {
+     margin-bottom: 10px;
+     display: flex;
+     flex-flow: row nowrap;
+     align-items: center;
+ }
+ /********************************** WORK *********************************/
+ 
+ .navwrapper {
+     position: fixed;
+     left: 30px;
+     top: 0px;
+     width: 20%;
+     height: 100vh;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+ }
+ 
+ .portabarrette {
+     height: 30px;
+     margin: 20px 0;
+     display: flex;
+     flex-flow: row wrap;
+     align-items: center;
+ }
+ 
+ .barrette {
+     width: 4px;
+     height: 4px;
+     margin: 5px 5px;
+     background-color: lightgray;
+     transition: width 2s ease .1s;
+ }
+ 
+ .short {
+     font-size: 13px;
+ }
+ 
+ .portabarrette:hover .barrette {
+     width: 33px;
+     transition: width 1s ease .1s;
+ }
+ 
+ .portabarrette:hover .short {
+     color: #EF7E64;
+     transition: color .1s ease 0;
+ }
+ 
+ .work {
+     margin-top: 250px;
+     margin-left: 25%;
+ }
+ 
+ .projectsection {
+     width: 100%;
+     margin: 2% 0 20% 0;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+     align-items: center;
+ }
+ 
+ .projectinfo {
+     width: 40%;
+     padding-left: 20px;
+     border-left: 1px solid lightgrey;
+ }
+ 
+ .special {
+     font-weight: 500;
+     letter-spacing: 1px;
+     color: #62B4C6;
+ }
+ 
+ h3 {
+     font-size: 16px;
+     line-height: 2;
+ }
+ 
+ .see {
+     visibility: hidden;
+     color: #EF7E64;
+     padding: 0;
+     margin: 5px 0 0 0;
+ }
+ 
+ #atm {
+     width: 50%;
+     height: 400px;
+     margin: 0;
+     background-image: url(img/atm/atm-home.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+ }
+ 
+ .atmsection:hover #atm {
+     background-image: url(img/atm/atm.gif);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+ }
+ 
+ .atmsection:hover .special {
+     color: #EF7E64;
+ }
+ 
+ .atmsection:hover .see {
+     visibility: visible;
+ }
+ 
+ #samsung {
+     width: 50%;
+     height: 400px;
+     margin: 0;
+     background-image: url(img/samsung/Samsung-landing.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+ }
+ 
+ .samsungsection:hover #samsung {
+     background-image: url(img/samsung/Samsung.gif);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+ }
+ 
+ .samsungsection:hover .special {
+     color: #EF7E64;
+ }
+ 
+ .samsungsection:hover .see {
+     visibility: visible;
+ }
+ 
+ #tokyo {
+     width: 50%;
+     height: 600px;
+     margin: 0;
+     background-image: url(img/typography/landing.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+ }
+ 
+ .tokyosection:hover #tokyo {
+     background-image: url(img/typography/tokyo.gif);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+ }
+ 
+ .tokyosection:hover .special {
+     color: #EF7E64;
+ }
+ 
+ .tokyosection:hover .see {
+     visibility: visible;
+ }
+ 
+ #mutandae {
+     width: 50%;
+     height: 400px;
+     margin: 0;
+     background-image: url(img/mutandae/home.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+ }
+ 
+ .mutandaesection:hover #mutandae {
+     background-image: url(img/mutandae/mutandae.gif);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+ }
+ 
+ .mutandaesection:hover .special {
+     color: #EF7E64;
+ }
+ 
+ .mutandaesection:hover .see {
+     visibility: visible;
+ }
+ 
+ #sp {
+     width: 50%;
+     height: 300px;
+     margin: 0;
+     background-image: url(img/sp/sp-guado.jpg);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: right;
+ }
+ 
+ .spsection:hover #sp {
+     background-image: url(img/sp/sp.gif);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: right;
+ }
+ 
+ .spsection:hover .special {
+     color: #EF7E64;
+ }
+ 
+ .spsection:hover .see {
+     visibility: visible;
+ }
+ /********************************** PROJECT *********************************/
+ 
+ .projectback {
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 20%;
+     height: 100vh;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: flex-end;
+ }
+ 
+ .projectlogo {
+     width: 100%;
+     height: 60px;
+     margin-bottom: 50%;
+ }
+ 
+ .projectdata {
+     margin-left: 30px;
+     margin-bottom: 55px;
+ }
+ 
+ .white {
+     color: white;
+ }
+ 
+ .tools {
+     width: 100%;
+     height: 40px;
+     margin: -10px;
+ }
+ 
+ .explanation {
+     margin-left: 30px;
+ }
+ 
+ .img {
+     margin-left: 30px;
+     width: 80%;
+ }
 
-header {
-    width: 100%;
+ /************* ATM ***************/
+ 
+ .atm {
+     background-image: url(img/atm/background.jpg);
+     background-position: left;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ .atm-logo {
+     background-image: url(img/atm/atm-logo.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .atm-tools {
+     background-image: url(img/atm/atm-tools.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .atm-personas {
+     height: 300px;
+     background-image: url(img/atm/personas.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .atm-task {
+     height: 350px;
+     margin: 40px 30px;
+     background-image: url(img/atm/task-flow.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .atm-zones {
+     height: 700px;
+     margin: -100px 30px;
+     background-image: url(img/atm/atm-zones.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .atm-video {
+     width: 80%;
+     margin-left: 2%;
+     padding-bottom: 50px;
+ }
+
+ /************* SAMSUNG ***************/
+ 
+.sams {
+     background-color: #343434;
+ }
+
+ .sams-logo {
+     height:115px;
+     margin-bottom: 40%;
+     
+     background-image: url(img/samsung/sams-logo.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .sams-tools {
+     background-image: url(img/samsung/sams-tools.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+ .sams-graphics {
+     height: 200px;
+     
+     background-image: url(img/samsung/sams-graphics.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+ .sams-families {
+     height: 500px;
+     margin-top: -20px;
+     
+     background-image: url(img/samsung/Samsung-families.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+ .sams-pl {
+     height: 300px;
+     margin: 80px 0;
+     
+     background-image: url(img/samsung/4%20Screens.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+ .sams-game {
+     height: 500px;
+     margin-top: -20px;
+     
+     background-image: url(img/samsung/Samsung-gameplay.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+ .sams-touchpoints {
+     height: 70px;
+     
+     margin: 50px;
+     
+     background-image: url(img/samsung/sams-touchpoints.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ 
+
+ /*********************************** MEDIA (iPad) **********************************/
+ 
+ @media (max-width: 1100px) {
+     
+     /********************************** HOME *********************************/
+     nav ul li a:hover {
+         text-decoration: none;
+         color: #565656;
+     }
+     .intro:hover .logo-container {
+         background-color: #62B4C6;
+     }
+     .intro:hover .subtitle {
+         visibility: hidden;
+     }
+     /********************************** CONTACT *********************************/
+     .mail:hover a {
+         color: #62B4C6;
+     }
+     .cv:hover a {
+         color: #62B4C6;
+     }
+     .me:hover .logo-container {
+         background-color: #62B4C6;
+     }
+     .contacts {
+         bottom: 5%;
+     }
+     .mail:hover {
+         background-image: url(img/busta.png);
+         background-repeat: no-repeat;
+         background-position: left;
+         background-size: contain;
+     }
+     .cv:hover {
+         background-image: url(img/graffetta.png);
+         background-repeat: no-repeat;
+         background-position: left;
+         background-size: contain;
+     }
+     /********************************** ABOUT *********************************/
+     .picofme {
+         width: 36%;
+     }
+     .backhead {
+         width: 100%;
+         height: 80px;
+     }
+     article {
+         width: 64%;
+         margin-left: 36%;
+         margin-top: 250px;
+     }
+     .aboutsection {
+         margin: 5% 0 20% 30px;
+     }
+     p {
+         width: 90%;
+         font-family: 'Source Sans Pro', sans-serif;
+     }
+     .arrow {
+         width: 20px;
+         margin-left: 90%;
+     }
+     .programicon {
+         width: 100px;
+     }
+     .allskills {
+         width: 400px;
+         margin-top: 30px;
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-between;
+     }
+     /********************************** WORK *********************************/
+     .navwrapper {
+         left: 30px;
+         top: 0px;
+         width: 10%;
+     }
+     .barrette {
+         width: 30px;
+         height: 1px;
+         margin: 5px 5px;
+     }
+     .portabarrette:hover .barrette {
+         width: 30px;
+     }
+     .portabarrette:hover .short {
+         color: #565656;
+     }
+     .work {
+         width: 80%;
+         margin-left: 20%;
+         margin-top: 250px;
+     }
+     .projectsection {
+         width: 100%;
+         margin: 20px 0;
+         justify-content: flex-start;
+     }
+     .projectinfo {
+         width: 35%;
+     }
+     .special {
+         font-weight: 500;
+         letter-spacing: 1px;
+         color: #62B4C6;
+     }
+     .see {
+         display: none;
+     }
+     #atm {
+         width: 65%;
+         height: 400px;
+     }
+     .atmsection:hover #atm {
+         background-image: url(img/atm/atm-home.png);
+     }
+     .atmsection:hover .special {
+         color: #62B4C6;
+     }
+     #samsung {
+         width: 65%;
+         height: 400px;
+     }
+     .samsungsection:hover #samsung {
+         background-image: url(img/samsung/Samsung-landing.png);
+     }
+     .samsungsection:hover .special {
+         color: #62B4C6;
+     }
+     #tokyo {
+         width: 65%;
+         height: 500px;
+     }
+     .tokyosection:hover #tokyo {
+         background-image: url(img/typography/landing.png);
+     }
+     .tokyosection:hover .special {
+         color: #62B4C6;
+     }
+     #mutandae {
+         width: 65%;
+         height: 400px;
+     }
+     .mutandaesection {
+         background-position: -20px;
+     }
+     .mutandaesection:hover #mutandae {
+         background-image: url(img/mutandae/home.png);
+         background-position: -20px;
+     }
+     .mutandaesection:hover .special {
+         color: #62B4C6;
+     }
+     #sp {
+         width: 65%;
+         height: 300px;
+     }
+     .spsection:hover #sp {
+         background-image: url(img/sp/sp-guado.jpg);
+     }
+     .spsection:hover .special {
+         color: #62B4C6;
+     }
+     /********************************** PROJECT *********************************/
+     .projectback {
+         width: 36%;
+     }
+     .projectlogo {
+         width: 90%;
+         height: 80px;
+         margin-bottom: 40%;
+     }
+     .projectdata {
+         margin-left: 30px;
+         margin-bottom: 55px;
+     }
+     .tools {
+         width: 70%;
+         height: 40px;
+         margin: -10px;
+     }
+     .explanation {
+         margin-left: 30px;
+     }
+     .img {
+         margin-left: 30px;
+         width: 90%;
+     }
+     /************* ATM ***************/
+     .atm-personas {
+         height: 200px;
+     }
+     .atm-task {
+         height: 300px;
+         margin: 0 30px;
+     }
+     .atm-zones {
+         height: 500px;
+         margin: -80px 30px;
+     }
+     .atmvideo {
+         width: 90%;
+         padding-bottom: 70px;
+     }
+     
+      /************* SAMSUNG ***************/
+     
     
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    
-    z-index: 2;
-}
+ .sams-logo {
+     height:100px;
+ }
 
+ .sams-graphics {
+     height: 150px;
+ }
 
-nav{
-    margin:25px 20px 0 0;
-}
+ .sams-families {
+     height: 300px;
+     margin-top: 0px;
+ }
 
-    
-.logo-container.top{ 
-    margin: 25px 20px;
-}
-    
-.contactnav{
-    font-weight: 300;
-    color: #EF7E64;
-}
+ .sams-pl {
+     height: 300px;
+     margin: 50px 10px;
+ }
 
+ .sams-game {
+     height: 300px;
+     margin-top: 0px;
+ }
 
-.contacts{
-    position:absolute;
-    bottom:7%;
-}
-
-h1{
-    margin: 20px 20px;
-    font-size: 16px;
-}
-
-.mail{
-    width: 200px;
-    
-    margin: 20px 20px;
-    padding-left:70px;
-    
-    font-size: 14px;
-    line-height:normal;
-}
-
-.cv{
-    width: 200px;
-    
-    margin: 20px 20px;
-    padding-left:70px;
-    
-    font-size: 14px;
-    line-height:normal;
-}
-
-    
-
-
-        /********************************** ABOUT *********************************/
-
-
-.picofme{ 
-    /*width: 100%;
+ .sams-touchpoints {
+     height: 50px;
+     
+     margin: 20px;
+ }
+ }
+ /********************************** MEDIA (mobile landscape) *********************************/
+ 
+ @media (max-width: 736px) {
+     .backhead {
+         height: 90px;
+     }
+     /********************************** HOME *********************************/
+     header {
+         width: 100%;
+         justify-content: center;
+     }
+     nav {
+         margin: 15px auto;
+     }
+     nav ul li {
+         width: 95px;
+         font-size: 13px;
+     }
+     .intro {
+         width: 300px;
+         margin: 0 auto;
+         position: relative;
+         left: auto;
+         flex-flow: column wrap;
+         justify-content: center;
+         align-items: center;
+     }
+     .logo-container {
+         width: 90px;
+         height: 90px;
+     }
+     .logo {
+         width: 90px;
+         height: 90px;
+     }
+     .home-title {
+         margin-top: 0px;
+     }
+     h2 {
+         font-size: 16px;
+     }
+     .changing {
+         margin-top: -30px;
+         padding-left: 90px;
+         font-size: 16px;
+     }
+     /********************************** CONTACT *********************************/
+     header {
+         width: 100%;
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-between;
+         z-index: 2;
+     }
+     nav {
+         margin: 25px 20px 0 0;
+     }
+     .logo-container.top {
+         margin: 25px 20px;
+     }
+     .contactnav {
+         font-weight: 300;
+         color: #EF7E64;
+     }
+     .contacts {
+         position: absolute;
+         bottom: 7%;
+     }
+     h1 {
+         margin: 20px 20px;
+         font-size: 16px;
+     }
+     .mail {
+         width: 200px;
+         margin: 20px 20px;
+         padding-left: 70px;
+         font-size: 14px;
+         line-height: normal;
+     }
+     .cv {
+         width: 200px;
+         margin: 20px 20px;
+         padding-left: 70px;
+         font-size: 14px;
+         line-height: normal;
+     }
+     /********************************** ABOUT *********************************/
+     .picofme {
+         /*width: 100%;
     
     opacity: 0.1;*/
-    display: none;
-}
+         display: none;
+     }
+     article {
+         width: 100%;
+         margin-left: 0px;
+         margin-top: 140px;
+     }
+     .aboutsection {
+         margin: 10% 0 5% 20px;
+     }
+     .title {
+         margin-top: 20px;
+         margin-bottom: 0;
+     }
+     .arrow {
+         width: 15px;
+     }
+     /********************************** WORK *********************************/
+     .navwrapper {
+         display: none;
+     }
+     .work {
+         width: 100%;
+         margin-top: 140px;
+         margin-left: 0px;
+     }
+     .projectsection {
+         width: 100%;
+         margin: -20px 0;
+         flex-flow: row;
+         justify-content: center;
+     }
+     .projectinfo {
+         width: 30%;
+         margin: 0;
+         margin-left: 0px;
+         border-left: none;
+     }
+     #atm {
+         width: 50%;
+         height: 300px;
+         background-position: left;
+     }
+     #samsung {
+         width: 50%;
+         height: 300px;
+         background-position: left;
+     }
+     #tokyo {
+         width: 50%;
+         height: 300px;
+         background-position: center;
+     }
+     #mutandae {
+         width: 50%;
+         height: 300px;
+         background-position: -20px;
+     }
+     #sp {
+         width: 50%;
+         height: 300px;
+         background-position: left;
+     }
+     /********************************** PROJECT *********************************/
+     .projectback {
+         position: relative;
+         left: 0;
+         top: 0;
+         width: 100vw;
+         height: 100vh;
+     }
+      
+     .amt{
+         background-image: url(img/atm/background2.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     
+     .projectlogo {
+         width: 100%;
+         height: 60px;
+         margin: 2% auto;
+     }
+     .projectdata {
+         margin-left: 20px;
+         margin-bottom: 15px;
+     }
+     .white {
+         line-height: .7;
+     }
+     .tools {
+         width: 20%;
+         height: 40px;
+         margin: -3px;
+         margin-top: -10px;
+     }
+     .explanation {
+         margin-left: 20px;
+     }
+     .img {
+         margin-left: 0px;
+         width: 95%;
+     }
+     .article {
+         margin-top: 80px;
+     }
+     /************* ATM ***************/
+     .atm-personas {
+         height: 230px;
+     }
+     .atm-task {
+         height: 350px;
+         margin: 20px 20px;
+     }
+     .atm-zones {
+         height: 400px;
+         margin: -10px 30px;
+     }
+     .atmvideo {
+         width: 80%;
+         margin-left: 10%;
+         padding-bottom: 50px;
+     }
+     
+      /************* SAMSUNG ***************/
+     .nav-white{
+         color: white;
+     }
     
-article{
-    width:100%;
-    
-    margin-left:0px;
-    margin-top: 140px;
-}
-    
-.aboutsection{
-    margin:10% 0 5% 20px;  
-}
+ .sams-logo {
+     height:90px;
+     margin-bottom: 0;
+ }
 
-.title{
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-  
-.arrow{
-    width: 15px;
-}
+ .sams-graphics {
+     height: 150px;
+ }
 
+ .sams-families {
+     height: 300px;
+     margin-top: 0px;
+ }
 
-    
-/********************************** WORK *********************************/ 
+ .sams-pl {
+     height: 300px;
+     margin: 50px 10px;
+ }
 
-.navwrapper{
-    display: none;
-}
-    
-.work{
-    width: 100%;
-    margin-top: 140px;
-    margin-left: 0px;
-}
+ .sams-game {
+     height: 300px;
+     margin-top: 0px;
+ }
 
-.projectsection{
-    width: 100%;
-    
-    margin:-20px 0;
-    
-    flex-flow: row;
-    justify-content: center;
-}
-
-.projectinfo{
-    width:30%;
-    margin:0;
-    margin-left:0px;
-    
-    border-left: none;
-} 
-
-#atm{
-    width: 50%;
-    height: 300px;
-    
-    background-position: left;
-}
-
-
-#samsung{
-    width: 50%;
-    height: 300px;
-    
-    background-position: left;
-}
-
-#tokyo{
-    width: 50%;
-    height: 300px;
-    
-    background-position: center;
-}
-
-
-#mutandae{
-    width: 50%;
-    height: 300px;
-    
-    background-position: -20px;
-}
-
-
-#sp{
-    width: 50%;
-    height: 300px;
-    
-    background-position: left;
-}
-    
-/********************************** PROJECT *********************************/
-
-.projectback{
-    position: relative;
-    left: 0;
-    top: 0;
-    
-    width: 100vw;
-    height: 100vh;
-    
-    background-image: url(img/atm/background2.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.projectlogo{
-    width: 100%;
-    height:60px;
-    
-    margin:2% auto ;
-}
-
-.projectdata{
-    margin-left: 20px;
-    margin-bottom:45px;
-}
-    
-.white{
-    line-height: .7;
-}
-
-.tools{
-    width: 20%;
-    height: 40px;
-    
-    margin: -3px;
-    margin-top: -10px;
-}
-
-.explanation{
-    margin-left: 20px;
-}
-
-.img{
-    margin-left: 0px;
-    
-    width: 95%;
-}
-
-.article{
-    margin-top: 80px;
-}
-/************* ATM ***************/
-
-.atm-personas{
-    height: 230px;
-}
-
-.atm-task{
-    height: 350px;
-    margin: 20px 20px;
-}
-
-.atm-zones{
-    height: 400px;
-    margin: -10px 30px;
-}
-
-.atmvideo{
-    width: 80%;
-    margin-left: 10%;
-    padding-bottom:50px;
-}
-
-}
-/********************************** MEDIA (mobile portrait) *********************************/
-
-@media (max-width: 540px){
-    
-.backhead {
-    height: 75px;
-} 
-
-  /********************************** HOME *********************************/
-    
-nav{
-    margin:15px auto;
-}    
-    
-nav ul li{
-    width: 95px;
-    
-    font-size: 13px;
-}
-
-
-.intro{
-    width:300px;
-    
-    margin-top: 70%;
-    margin-left:auto;
-}
-
-    /*******************************CONTACT *********************************/
-  
-.myname{
-    display: none;
-}
+ .sams-touchpoints {
+     height: 50px;
+     
+     margin: 20px;
+ }
+ }
+ /********************************** MEDIA (mobile portrait) *********************************/
  
-.contacts{
-    bottom:30px;
-}
+ @media (max-width: 540px) {
+     .backhead {
+         height: 75px;
+     }
+     /********************************** HOME *********************************/
+     nav {
+         margin: 15px auto;
+     }
+     nav ul li {
+         width: 95px;
+         font-size: 13px;
+     }
+     .intro {
+         width: 300px;
+         margin-top: 70%;
+         margin-left: auto;
+     }
+     /*******************************CONTACT *********************************/
+     .myname {
+         display: none;
+     }
+     .contacts {
+         bottom: 30px;
+     }
+     .avatar {
+         position: fixed;
+         bottom: -25px;
+         right: -85px;
+         width: 85%;
+         overflow: hidden;
+         opacity: 0.4;
+     }
+     .logo-container.top {
+         width: 40px;
+         height: 40px;
+         margin: 20px 0 0 20px;
+     }
+     .logo.top {
+         width: 40px;
+         height: 40px;
+     }
+     /********************************** ABOUT *********************************/
+     article {
+         margin-top: 180px;
+     }
+     .aboutsection {
+         margin: 70px 0 30px 20px;
+     }
+     p {
+         font-size: 1em;
+     }
+     .arrow {
+         margin-top: 0;
+         margin-left: 90%;
+     }
+     .allskills {
+         width: 300px;
+     }
+     .programicon {
+         width: 75px;
+     }
+     /********************************** WORK *********************************/
+     .work {
+         margin-top: 180px;
+     }
+     .projectsection {
+         margin: 50px 0;
+         flex-flow: column;
+         justify-content: center;
+         align-items: flex-start;
+     }
+     .projectinfo {
+         width: 90%;
+     }
+     #atm {
+         width: 100%;
+         height: 300px;
+         margin-top: -10px;
+         order: 1;
+     }
+     #samsung {
+         width: 100%;
+         height: 300px;
+         margin-top: 0px;
+         order: 1;
+         background-position: center;
+     }
+     #tokyo {
+         width: 100%;
+         height: 400px;
+         margin-top: -15px;
+         order: 1;
+         background-position: center;
+     }
+     #mutandae {
+         width: 100%;
+         height: 300px;
+         margin-top: -10px;
+         order: 1;
+         background-position: -20px;
+     }
+     #sp {
+         width: 100%;
+         height: 300px;
+         margin-top: -10px;
+         order: 1;
+         background-position: center;
+     }
+     /********************************** PROJECT *********************************/
+     .projectback {
+         position: relative;
+         left: 0;
+         top: 0;
+         width: 100vw;
+         height: 100vh;
+     }
+      
+     .atm{
+         background-image: url(img/atm/background.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     .projectlogo {
+         width: 100%;
+         height: 60px;
+         margin: 30% auto;
+     }
+     .projectdata {
+         margin-left: 20px;
+         margin-bottom: 75px;
+     }
+     .white {
+         line-height: .5;
+     }
+     .tools {
+         width: 40%;
+         margin-top: -10px;
+         margin-left: 5px
+     }
+     .explanation {
+         margin-left: 20px;
+     }
+     .img {
+         margin-left: 0px;
+         width: 95%;
+     }
+     /************* ATM ***************/
+     .atm-personas {
+         height: 150px;
+         margin: 0;
+     }
+     .atm-task {
+         height: 200px;
+         margin: 0 10px;
+     }
+     .atm-zones {
+         height: 400px;
+         margin: -80px 0;
+     }
+     .atmvideo {
+         width: 90%;
+         margin-left: 5%;
+         padding-bottom: 50px;
+     }
+     
+           /************* SAMSUNG ***************/
     
-.avatar{
-    position: fixed;
-    bottom: -25px;
-    right: -85px;
-    width: 85%;
-    overflow: hidden;
-    opacity: 0.4;
-}
-    
-.logo-container.top{
-    width: 40px;
-    height: 40px;
-    
-    margin: 20px 0 0 20px;
-}  
+ .sams-logo {
+     height:80px;
+     margin: 30% auto;
+ }
+
+ .sams-graphics {
+     height: 90px;
+ }
+
+ .sams-families {
+     height: 300px;
+     margin-top: -20px;
+ }
+
+ .sams-pl {
+     height: 250px;
+     margin: 40px 5px;
+ }
+
+ .sams-game {
+     height: 300px;
+     margin-top: -20px;
+ }
+
+ .sams-touchpoints {
+     width: 90%;
+     height: 60px;
+     
+     margin: auto;
+ }
+ }
+ /********************************** MEDIA (iphone5) *********************************/
  
-
-.logo.top{
-    width: 40px;
-    height: 40px;   
-}
-    
-    
-    /********************************** ABOUT *********************************/
-    
-article{
-    margin-top: 180px;
-}    
-    
-.aboutsection{
-    margin:70px 0 30px 20px;  
-}
-    
-p{
-    font-size: 1em;
-}
-    
-.arrow{
-    margin-top: 0;
-    margin-left: 90%;
-}
- 
-.allskills{
-    width:300px;
-}
-    
-.programicon{
-    width: 75px;
-}
-    
-/********************************** WORK *********************************/ 
-
-.work{
-   margin-top: 180px; 
-}
-    
-    
-.projectsection{
-    
-    margin:50px 0;
-    
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.projectinfo{
-    width:90%;
-} 
-
-#atm{
-    width: 100%;
-    height: 300px;
-    
-    margin-top:-10px;
-    
-    order: 1;
-}
-
-
-#samsung{
-    width: 100%;
-    height: 300px;
-    
-    margin-top:0px;
-    
-    order: 1;
-    
-    background-position: center;
-}
-
-#tokyo{
-    width: 100%;
-    height: 400px;
-    
-    margin-top:-15px;
-    
-    order: 1;
-    
-    background-position: center;
-}
-
-
-#mutandae{
-    width: 100%;
-    height: 300px;
-    
-    margin-top:-10px;
-    
-    order: 1;
-    
-    background-position: -20px;
-}
-
-
-#sp{
-    width: 100%;
-    height: 300px;
-    
-    margin-top:-10px;
-    
-    order: 1;
-    
-    background-position: center;
-}
-
-    /********************************** PROJECT *********************************/
-
-.projectback{
-    position: relative;
-    left: 0;
-    top: 0;
-    
-    width: 100vw;
-    height: 100vh;
-    
-    background-image: url(img/atm/background.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.projectlogo{
-    width: 100%;
-    height:60px;
-    
-    margin:30% auto ;
-}
-
-.projectdata{
-    margin-left: 20px;
-    margin-bottom:75px;
-}
-    
-.white{
-    line-height: .5;
-}
-
-.tools{
-    width: 40%;
-    
-    margin-top: -10px;
-    margin-left: 5px
-}
-
-.explanation{
-    margin-left: 20px;
-}
-
-.img{
-    margin-left: 0px;
-    
-    width: 95%;
-}
-
-/************* ATM ***************/
-
-.atm-personas{
-    height: 150px;
-    margin: 0;
-}
-
-.atm-task{
-    height: 200px;
-    margin: 0 10px;
-}
-
-.atm-zones{
-    height: 400px;
-    margin: -80px 0;
-}
-
-.atmvideo{
-    width: 90%;
-    margin-left: 5%;
-    padding-bottom:50px;
-}
-
-    
-}
-    
-    
-/********************************** MEDIA (iphone5) *********************************/
-
-@media (max-width: 370px){      
-    
-nav ul li{
-    width: 75px;
-}
-
-}
-
-
-
+ @media (max-width: 370px) {
+     nav ul li {
+         width: 75px;
+     }
+ }
