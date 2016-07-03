@@ -1,4 +1,4 @@
- * {
+* {
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
      box-sizing: border-box;
@@ -216,6 +216,7 @@
  .myname {
      color: black;
      /*text-shadow:0px 0px 5px #f0f0f0;*/
+     margin-left: -20px;
  }
  
  .selected {
@@ -427,9 +428,7 @@
  .projectsection {
      width: 100%;
      /*margin: 2% 0 20% 0;*/
-     
      margin: 0;
-     
      display: flex;
      flex-flow: row wrap;
      justify-content: space-around;
@@ -443,10 +442,10 @@
      border-left: 1px solid lightgrey;
  }
  
-.infodata{
-    margin: 0;
-}
-
+ .infodata {
+     margin: 0;
+ }
+ 
  .special {
      font-weight: 500;
      letter-spacing: 1px;
@@ -472,9 +471,7 @@
  #atm {
      width: 584px;
      height: 300px;
-     
      overflow: hidden;
-     
      background-image: url(img/atm/atm-sprite.png);
      background-repeat: no-repeat;
      background-size: cover;
@@ -482,20 +479,19 @@
  }
  
  .atmsection:hover #atm {
-       
-  animation-name: hoverAtm;
-  animation-duration: 4s;
-  animation-timing-function: steps(4);
-  animation-iteration-count: infinite;
-}
-
-@keyframes hoverAtm {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 -1200px;
-  }
+     animation-name: hoverAtm;
+     animation-duration: 4s;
+     animation-timing-function: steps(4);
+     animation-iteration-count: infinite;
+ }
+ 
+ @keyframes hoverAtm {
+     0% {
+         background-position: 0 0;
+     }
+     100% {
+         background-position: 0 -1200px;
+     }
  }
  
  .atmsection:hover .special {
@@ -506,7 +502,6 @@
      visibility: visible;
  }
  
- 
  #samsunginfo {
      height: 170px;
  }
@@ -514,32 +509,28 @@
  #samsung {
      width: 547px;
      height: 375px;
-     
      margin-right: 40px;
-     
      overflow: hidden;
-     
      background-image: url(img/samsung/sams-sprite.png);
      background-repeat: no-repeat;
      background-size: cover;
-     background-position: 40px top ; 
+     background-position: 40px top;
  }
  
  .samsungsection:hover #samsung {
-           
-  animation-name: hoverSams;
-  animation-duration: 6s;
-  animation-timing-function: steps(6);
-  animation-iteration-count: infinite;
-}
-
-@keyframes hoverSams {
-  0% {
-    background-position: 40px 0;
-  }
-  100% {
-    background-position: 40px -2250px;
-  }
+     animation-name: hoverSams;
+     animation-duration: 6s;
+     animation-timing-function: steps(6);
+     animation-iteration-count: infinite;
+ }
+ 
+ @keyframes hoverSams {
+     0% {
+         background-position: 40px 0;
+     }
+     100% {
+         background-position: 40px -2250px;
+     }
  }
  
  .samsungsection:hover .special {
@@ -557,10 +548,8 @@
  #tokyo {
      width: 292px;
      height: 401px;
-     
      margin-left: 150px;
      margin-right: 110px;
-     
      background-image: url(img/typography/tokyo-sprite.png);
      background-repeat: no-repeat;
      background-size: cover;
@@ -568,957 +557,1303 @@
  }
  
  .tokyosection:hover #tokyo {
-               
-  animation-name: hoverTokyo;
-  animation-duration: 6s;
-  animation-timing-function: steps(6);
-  animation-iteration-count: infinite;
+     animation-name: hoverTokyo;
+     animation-duration: 6s;
+     animation-timing-function: steps(6);
+     animation-iteration-count: infinite;
+ }
+ 
+ @keyframes hoverTokyo {
+     0% {
+         background-position: 0px 0;
+     }
+     100% {
+         background-position: 0px -2404px;
+     }
+ }
 }
-
-@keyframes hoverTokyo {
-  0% {
-    background-position: 0px 0;
-  }
-  100% {
-    background-position: 0px -2404px;
-  }
- }
- }
- 
- .tokyosection:hover .special {
-     color: #EF7E64;
- }
- 
- .tokyosection:hover .see {
-     visibility: visible;
- }
- 
- #mutandaeinfo {
-     height: 170px;
- }
- 
- #mutandae {
-     width: 584px;
-     height: 300px;
-     
-     overflow: hidden;
-     
-     background-image: url(img/mutandae/mutandae-sprite.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: top;
- }
- 
- .mutandaesection:hover #mutandae {
-     animation-name: hoverMutandae;
-  animation-duration: 2s;
-  animation-timing-function: steps(2);
-  animation-iteration-count: infinite;
+.tokyosection:hover .special {
+    color: #EF7E64;
 }
-
+.tokyosection:hover .see {
+    visibility: visible;
+}
+#mutandaeinfo {
+    height: 170px;
+}
+#mutandae {
+    width: 584px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(img/mutandae/mutandae-sprite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.mutandaesection:hover #mutandae {
+    animation-name: hoverMutandae;
+    animation-duration: 2s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
 @keyframes hoverMutandae {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 -600px;
-  }
- }
- 
- 
- .mutandaesection:hover .special {
-     color: #EF7E64;
- }
- 
- .mutandaesection:hover .see {
-     visibility: visible;
- }
- 
- #spinfo {
-     height: 170px;
- }
- 
- #sp {
-     width: 462px;
-     height: 250px;
-     margin-left: 60px;
-     margin-right: 40px;
+    0% {
+        background-position: 0 0;
+    }
+    
+    100% {
+        background-position: 0 -600px;
+    }
+}
+.mutandaesection:hover .special {
+    color: #EF7E64;
+}
+.mutandaesection:hover .see {
+    visibility: visible;
+}
+#spinfo {
+    height: 170px;
+}
+#sp {
+    width: 462px;
+    height: 250px;
+    margin-left: 60px;
+    margin-right: 40px;
+    overflow: hidden;
+    background-image: url(img/sp/sp-sprite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.spsection:hover #sp {
+    animation-name: hoverSp;
+    animation-duration: 6s;
+    animation-timing-function: steps(6);
+    animation-iteration-count: infinite;
+}
+@keyframes hoverSp {
+    0% {
+        background-position: 0 0;
+    }
+    
+    100% {
+        background-position: 0 -1500px;
+    }
+}
+.spsection:hover .special {
+    color: #EF7E64;
+}
+.spsection:hover .see {
+    visibility: visible;
+}
+
+/********************************** PROJECT *********************************/
+.projectback {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+.projectlogo {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 50%;
+}
+.projectdata {
+    margin-left: 30px;
+    margin-bottom: 55px;
+}
+.white {
+    color: white;
+}
+.tools {
+    width: 100%;
+    height: 40px;
+    margin: -10px;
+}
+.explanation {
+    margin-left: 30px;
+}
+.img {
+    margin-left: 30px;
+    width: 80%;
+}
+
+/************* ATM ***************/
+.atm {
+    background-image: url(img/atm/background.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.atm-logo {
+    background-image: url(img/atm/atm-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.atm-tools {
+    background-image: url(img/atm/atm-tools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.atm-personas {
+    height: 300px;
+    background-image: url(img/atm/personas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.atm-task {
+    height: 350px;
+    margin: 40px 30px;
+    background-image: url(img/atm/task-flow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.atm-zones {
+    height: 700px;
+    margin: -100px 30px;
+    background-image: url(img/atm/atm-zones.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.atm-video {
+    width: 80%;
+    margin: 0 5%;
+    padding-bottom: 50px;
+}
+
+/************* SAMSUNG ***************/
+.sams {
+    background-color: #343434;
+}
+.sams-logo {
+    height: 115px;
+    margin-bottom: 40%;
+    background-image: url(img/samsung/sams-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sams-tools {
+    background-image: url(img/samsung/sams-tools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sams-graphics {
+    height: 200px;
+    background-image: url(img/samsung/sams-graphics.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sams-families {
+    height: 500px;
+    margin-top: -20px;
+    background-image: url(img/samsung/Samsung-families.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sams-pl {
+    height: 300px;
+    margin: 80px 0;
+    background-image: url(img/samsung/4%20Screens.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sams-reward {
+    height: 500px;
+    margin-top: -20px;
+    background-image: url(img/samsung/Samsung-reward.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sams-game {
+    height: 500px;
+    margin-top: -20px;
+    background-image: url(img/samsung/Samsung-gameplay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sams-touchpoints {
+    height: 70px;
+    margin: 50px;
+    background-image: url(img/samsung/sams-touchpoints.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/************* TOKYO ***************/
+.tok {
+    background-color: black;
+}
+
+.tokyo-logo {
+    height: 200px;
+    margin-bottom: 15%;
+    background-image: url(img/typography/light.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.tokyo-tools {
+    background-image: url(img/typography/tokyo-tools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.tokyo-try {
+    height: 160px;
+    background-image: url(img/typography/tokyo-tries-03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.tokyo-final {
+    height: 160px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    background-image: url(img/typography/tokyo-final-03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.tokyo-cover {
+    height: 560px;
+    
+    margin-top: 20px;
+    margin-bottom: 60px;
+    
+    background-image: url(img/typography/cover-sito.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tokyo-article{
+    width: 438px;
+     height: 601px;
+    
+    margin:30px 22%;
      
-     overflow: hidden;
-     
-     background-image: url(img/sp/sp-sprite.png);
+     background-image: url(img/typography/tokyo-article.png);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: top;
+    
+     animation-name: Tokyo;
+     animation-duration: 4s;
+     animation-timing-function: steps(4);
+     animation-iteration-count: infinite;
  }
  
- .spsection:hover #sp {
-     animation-name: hoverSp;
-  animation-duration: 6s;
-  animation-timing-function: steps(6);
-  animation-iteration-count: infinite;
+ @keyframes Tokyo {
+     0% {
+         background-position: 0px 0;
+     }
+     100% {
+         background-position: 0px -2404px;
+     }
+ }
+    
+
+/*********************************** MEDIA (iPad) **********************************/
+@media (max-width: 1115px) {
+    /********************************** HOME *********************************/
+    
+    nav ul li a:hover {
+        text-decoration: none;
+        color: #565656;
+    }
+    
+    .intro:hover .logo-container {
+        background-color: #62B4C6;
+    }
+    
+    .intro:hover .subtitle {
+        visibility: hidden;
+    }
+    /********************************** CONTACT *********************************/
+    
+    .mail:hover a {
+        color: #62B4C6;
+    }
+    
+    .cv:hover a {
+        color: #62B4C6;
+    }
+    
+    .me:hover .logo-container {
+        background-color: #62B4C6;
+    }
+    
+    .contacts {
+        bottom: 5%;
+    }
+    
+    .mail:hover {
+        background-image: url(img/busta.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+    }
+    
+    .cv:hover {
+        background-image: url(img/graffetta.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+    }
+    /********************************** ABOUT *********************************/
+    
+    .picofme {
+        width: 33%;
+        background-position: -5px;
+    }
+    
+    .backhead {
+        width: 100%;
+        height: 80px;
+    }
+    
+    article {
+        width: 67%;
+        margin-left: 33%;
+        margin-top: 250px;
+    }
+    
+    .aboutsection {
+        margin: 5% 0 20% 30px;
+    }
+    
+    p {
+        width: 90%;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    .arrow {
+        width: 20px;
+        margin-left: 90%;
+    }
+    
+    .programicon {
+        width: 100px;
+    }
+    
+    .allskills {
+        width: 400px;
+        margin-top: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    /********************************** WORK *********************************/
+    
+    .navwrapper {
+        left: 30px;
+        top: 0px;
+        width: 20%;
+    }
+    
+    .barrette {
+        width: 30px;
+        height: 1px;
+        margin: 5px 5px;
+    }
+    
+    .portabarrette:hover .barrette {
+        width: 30px;
+    }
+    
+    .portabarrette:hover .short {
+        color: #565656;
+    }
+    
+    .work {
+        width: 80%;
+        margin-left: 20%;
+        margin-top: 250px;
+        margin-bottom: 10%;
+    }
+    
+    .projectsection {
+        width: 100%;
+        /*margin: 20px 0;*/
+        justify-content: space-around;
+    }
+    
+    .projectinfo {
+        width: 150px;
+        margin-right: 15px;
+    }
+    
+    .special {
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #62B4C6;
+    }
+    
+    .see {
+        display: none;
+    }
+    
+    #atm {
+        width: 420px;
+        height: 200px;
+    }
+    
+    .atmsection:hover #atm {
+        animation-play-state: paused;
+    }
+    
+    .atmsection:hover .special {
+        color: #62B4C6;
+    }
+    
+    #samsung {
+        width: 380px;
+        height: 260px;
+    }
+    
+    .samsungsection:hover #samsung {
+        animation-play-state: paused;
+    }
+    
+    .samsungsection:hover .special {
+        color: #62B4C6;
+    }
+    
+    #tokyo {
+        width: 285px;
+        height: 390px;
+        margin-left: 90px;
+        margin-right: 50px;
+    }
+    
+    .tokyosection:hover #tokyo {
+        animation-play-state: paused;
+    }
+    
+    .tokyosection:hover .special {
+        color: #62B4C6;
+    }
+    
+    #mutandae {
+        width: 420px;
+        height: 200px;
+    }
+    
+    .mutandaesection:hover #mutandae {
+        animation-play-state: paused;
+    }
+    
+    .mutandaesection:hover .special {
+        color: #62B4C6;
+    }
+    
+    #sp {
+        width: 395px;
+        height: 210px;
+        margin: 0;
+    }
+    
+    .spsection:hover #sp {
+        animation-play-state: paused;
+    }
+    
+    .spsection:hover .special {
+        color: #62B4C6;
+    }
+    /********************************** PROJECT *********************************/
+    
+    .projectback {
+        width: 33%;
+    }
+    
+    .projectlogo {
+        width: 90%;
+        height: 80px;
+        margin-bottom: 40%;
+    }
+    
+    .projectdata {
+        margin-left: 30px;
+        margin-bottom: 55px;
+    }
+    
+    .tools {
+        width: 70%;
+        height: 40px;
+        margin: -10px;
+    }
+    
+    .explanation {
+        margin-left: 30px;
+    }
+    
+    .img {
+        margin-left: 30px;
+        width: 90%;
+    }
+    /************* ATM ***************/
+    
+    .atm-personas {
+        height: 200px;
+    }
+    
+    .atm-task {
+        height: 300px;
+        margin: 0 30px;
+    }
+    
+    .atm-zones {
+        height: 500px;
+        margin: -80px 30px;
+    }
+    
+    .atm-video {
+        width: 90%;
+        margin: 0 5%;
+        padding: 0;
+    }
+    /************* SAMSUNG ***************/
+    
+    .sams-logo {
+        height: 100px;
+    }
+    
+    .sams-graphics {
+        height: 150px;
+    }
+    
+    .sams-families {
+        height: 300px;
+        margin-top: 0px;
+    }
+    
+    .sams-pl {
+        height: 300px;
+        margin: 50px 10px;
+    }
+    
+    .sams-game {
+        height: 300px;
+        margin-top: 0px;
+    }
+    
+    .sams-reward {
+        height: 300px;
+        margin-top: 0px;
+    }
+    
+    .sams-touchpoints {
+        height: 50px;
+        margin: 20px;
+    }
+    
+    /************* TOKYO ***************/
+    
+.tokyo-logo {
+    height: 200px;
+    margin-left: 10px;
+    margin-bottom: 15%;
 }
 
-@keyframes hoverSp {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 -1500px;
-  }
+.tokyo-try {
+    height: 120px;
+}
+    
+.tokyo-final {
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+    
+.tokyo-cover {
+    height: 440px;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+    
+.tokyo-article{
+    width: 292px;
+     height: 401px;
+    
+    margin:30px 25%;
+    
+     animation-name: Tokyo;
+     animation-duration: 4s;
+     animation-timing-function: steps(4);
+     animation-iteration-count: infinite;
  }
  
- .spsection:hover .special {
-     color: #EF7E64;
- }
- 
- .spsection:hover .see {
-     visibility: visible;
- }
- /********************************** PROJECT *********************************/
- 
- .projectback {
-     position: fixed;
-     left: 0;
-     top: 0;
-     width: 20%;
-     height: 100vh;
-     display: flex;
-     flex-flow: column wrap;
-     justify-content: flex-end;
- }
- 
- .projectlogo {
-     width: 100%;
-     height: 60px;
-     margin-bottom: 50%;
- }
- 
- .projectdata {
-     margin-left: 30px;
-     margin-bottom: 55px;
- }
- 
- .white {
-     color: white;
- }
- 
- .tools {
-     width: 100%;
-     height: 40px;
-     margin: -10px;
- }
- 
- .explanation {
-     margin-left: 30px;
- }
- 
- .img {
-     margin-left: 30px;
-     width: 80%;
- }
- /************* ATM ***************/
- 
- .atm {
-     background-image: url(img/atm/background.jpg);
-     background-position: left;
-     background-repeat: no-repeat;
-     background-size: cover;
- }
- 
- .atm-logo {
-     background-image: url(img/atm/atm-logo.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .atm-tools {
-     background-image: url(img/atm/atm-tools.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .atm-personas {
-     height: 300px;
-     background-image: url(img/atm/personas.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .atm-task {
-     height: 350px;
-     margin: 40px 30px;
-     background-image: url(img/atm/task-flow.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .atm-zones {
-     height: 700px;
-     margin: -100px 30px;
-     background-image: url(img/atm/atm-zones.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .atm-video {
-     width: 80%;
-     margin: 0 5%;
-     padding-bottom: 50px;
- }
- /************* SAMSUNG ***************/
- 
- .sams {
-     background-color: #343434;
- }
- 
- .sams-logo {
-     height: 115px;
-     margin-bottom: 40%;
-     background-image: url(img/samsung/sams-logo.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .sams-tools {
-     background-image: url(img/samsung/sams-tools.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .sams-graphics {
-     height: 200px;
-     background-image: url(img/samsung/sams-graphics.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .sams-families {
-     height: 500px;
-     margin-top: -20px;
-     background-image: url(img/samsung/Samsung-families.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .sams-pl {
-     height: 300px;
-     margin: 80px 0;
-     background-image: url(img/samsung/4%20Screens.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .sams-game {
-     height: 500px;
-     margin-top: -20px;
-     background-image: url(img/samsung/Samsung-gameplay.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .sams-touchpoints {
-     height: 70px;
-     margin: 50px;
-     background-image: url(img/samsung/sams-touchpoints.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- /*********************************** MEDIA (iPad) **********************************/
- 
- @media (max-width: 1100px) {
-     /********************************** HOME *********************************/
-     nav ul li a:hover {
-         text-decoration: none;
-         color: #565656;
+ @keyframes Tokyo {
+     0% {
+         background-position: 0px 0;
      }
-     .intro:hover .logo-container {
-         background-color: #62B4C6;
-     }
-     .intro:hover .subtitle {
-         visibility: hidden;
-     }
-     /********************************** CONTACT *********************************/
-     .mail:hover a {
-         color: #62B4C6;
-     }
-     .cv:hover a {
-         color: #62B4C6;
-     }
-     .me:hover .logo-container {
-         background-color: #62B4C6;
-     }
-     .contacts {
-         bottom: 5%;
-     }
-     .mail:hover {
-         background-image: url(img/busta.png);
-         background-repeat: no-repeat;
-         background-position: left;
-         background-size: contain;
-     }
-     .cv:hover {
-         background-image: url(img/graffetta.png);
-         background-repeat: no-repeat;
-         background-position: left;
-         background-size: contain;
-     }
-     /********************************** ABOUT *********************************/
-     .picofme {
-         width: 36%;
-     }
-     .backhead {
-         width: 100%;
-         height: 80px;
-     }
-     article {
-         width: 64%;
-         margin-left: 36%;
-         margin-top: 250px;
-     }
-     .aboutsection {
-         margin: 5% 0 20% 30px;
-     }
-     p {
-         width: 90%;
-         font-family: 'Source Sans Pro', sans-serif;
-     }
-     .arrow {
-         width: 20px;
-         margin-left: 90%;
-     }
-     .programicon {
-         width: 100px;
-     }
-     .allskills {
-         width: 400px;
-         margin-top: 30px;
-         display: flex;
-         flex-flow: row wrap;
-         justify-content: space-between;
-     }
-     /********************************** WORK *********************************/
-     .navwrapper {
-         left: 30px;
-         top: 0px;
-         width: 20%;
-     }
-     .barrette {
-         width: 30px;
-         height: 1px;
-         margin: 5px 5px;
-     }
-     .portabarrette:hover .barrette {
-         width: 30px;
-     }
-     .portabarrette:hover .short {
-         color: #565656;
-     }
-     .work {
-         width: 80%;
-         margin-left: 20%;
-         margin-top: 250px;
-         margin-bottom: 10%;
-     }
-     .projectsection {
-         width: 100%;
-         /*margin: 20px 0;*/
-         justify-content:space-around;
-     }
-     .projectinfo {
-         width: 150px;
-         margin-right: 15px;
-     }
-     .special {
-         font-weight: 500;
-         letter-spacing: 1px;
-         color: #62B4C6;
-     }
-     .see {
-         display: none;
-     }
-     
-     #atm {
-        width: 420px;
-         height: 200px;
-     }
-     
-     .atmsection:hover #atm {
-         animation-play-state: paused;
-     }
-     .atmsection:hover .special {
-         color: #62B4C6;
-     }
-     #samsung {
-     width: 380px;
-     height: 260px;
-     }
-     .samsungsection:hover #samsung {
-        animation-play-state: paused;
-     }
-     .samsungsection:hover .special {
-         color: #62B4C6;
-     }
-     #tokyo {
-         width: 285px;
-     height: 390px;
-         
-         margin-left: 90px;
-         margin-right: 50px;
-     }
-     .tokyosection:hover #tokyo {
-        animation-play-state: paused;
-     }
-     .tokyosection:hover .special {
-         color: #62B4C6;
-     }
-     #mutandae {
-         width: 420px;
-         height: 200px;
-     }
-     
-     .mutandaesection:hover #mutandae {
-         animation-play-state: paused;
-     }
-     .mutandaesection:hover .special {
-         color: #62B4C6;
-     }
-     #sp {
-         width: 395px;
-     height: 210px;
-         margin: 0;
-     }
-     .spsection:hover #sp {
-          animation-play-state: paused;
-     }
-     .spsection:hover .special {
-         color: #62B4C6;
-     }
-     /********************************** PROJECT *********************************/
-     .projectback {
-         width: 36%;
-     }
-     .projectlogo {
-         width: 90%;
-         height: 80px;
-         margin-bottom: 40%;
-     }
-     .projectdata {
-         margin-left: 30px;
-         margin-bottom: 55px;
-     }
-     .tools {
-         width: 70%;
-         height: 40px;
-         margin: -10px;
-     }
-     .explanation {
-         margin-left: 30px;
-     }
-     .img {
-         margin-left: 30px;
-         width: 90%;
-     }
-     /************* ATM ***************/
-     .atm-personas {
-         height: 200px;
-     }
-     .atm-task {
-         height: 300px;
-         margin: 0 30px;
-     }
-     .atm-zones {
-         height: 500px;
-         margin: -80px 30px;
-     }
-     .atm-video {
-         width: 90%;
-         margin: 0 5%;
-         padding: 0;
-     }
-     /************* SAMSUNG ***************/
-     .sams-logo {
-         height: 100px;
-     }
-     .sams-graphics {
-         height: 150px;
-     }
-     .sams-families {
-         height: 300px;
-         margin-top: 0px;
-     }
-     .sams-pl {
-         height: 300px;
-         margin: 50px 10px;
-     }
-     .sams-game {
-         height: 300px;
-         margin-top: 0px;
-     }
-     .sams-touchpoints {
-         height: 50px;
-         margin: 20px;
+     100% {
+         background-position: 0px -1604px;
      }
  }
- /********************************** MEDIA (mobile landscape) *********************************/
- 
- @media (max-width: 736px) {
-     .backhead {
-         height: 90px;
-     }
-     /********************************** HOME *********************************/
-     header {
-         width: 100%;
-         justify-content: center;
-     }
-     .nav-home {
-         margin: 15px auto;
-     }
-     nav ul li {
-         width: 95px;
-         font-size: 13px;
-     }
-     .intro {
-         width: 300px;
-         margin: 0 auto;
-         position: relative;
-         left: auto;
-         flex-flow: column wrap;
-         justify-content: center;
-         align-items: center;
-     }
-     .logo-container {
-         width: 90px;
-         height: 90px;
-     }
-     .logo {
-         width: 90px;
-         height: 90px;
-     }
-     .home-title {
-         margin-top: 0px;
-     }
-     h2 {
-         font-size: 16px;
-     }
-     .changing {
-         margin-top: -30px;
-         padding-left: 90px;
-         font-size: 16px;
-     }
-     /********************************** CONTACT *********************************/
-     header {
-         width: 100%;
-         display: flex;
-         flex-flow: row wrap;
-         justify-content: space-between;
-         z-index: 2;
-     }
-     nav {
-         margin: 25px 20px 0 0;
-     }
-     .logo-container.top {
-         margin: 25px 20px;
-     }
-     .contactnav {
-         font-weight: 300;
-         color: #EF7E64;
-     }
-     .contacts {
-         position: absolute;
-         bottom: 7%;
-     }
-     h1 {
-         margin: 20px 20px;
-         font-size: 16px;
-     }
-     .mail {
-         width: 200px;
-         margin: 20px 20px;
-         padding-left: 70px;
-         font-size: 14px;
-         line-height: normal;
-     }
-     .cv {
-         width: 200px;
-         margin: 20px 20px;
-         padding-left: 70px;
-         font-size: 14px;
-         line-height: normal;
-     }
-     /********************************** ABOUT *********************************/
-     .picofme {
-         /*width: 100%;
+}
+
+
+
+/********************************** MEDIA (mobile landscape) *********************************/
+@media (max-width: 736px) {
+    .backhead {
+        height: 90px;
+    }
+    /********************************** HOME *********************************/
+    
+    header {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .nav-home {
+        margin: 15px auto;
+    }
+    
+    nav ul li {
+        width: 95px;
+        font-size: 13px;
+    }
+    
+    .intro {
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+        left: auto;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo-container {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .logo {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .home-title {
+        margin-top: 0px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    .changing {
+        margin-top: -30px;
+        padding-left: 90px;
+        font-size: 16px;
+    }
+    /********************************** CONTACT *********************************/
+    
+    header {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        z-index: 2;
+    }
+    
+    nav {
+        margin: 25px 20px 0 0;
+    }
+    
+    .logo-container.top {
+        margin: 25px 20px;
+    }
+    
+    .myname {
+     margin-left: 0px;
+ }
+    .contactnav {
+        font-weight: 300;
+        color: #EF7E64;
+    }
+    
+    .contacts {
+        position: absolute;
+        bottom: 7%;
+    }
+    
+    h1 {
+        margin: 20px 20px;
+        font-size: 16px;
+    }
+    
+    .mail {
+        width: 200px;
+        margin: 20px 20px;
+        padding-left: 70px;
+        font-size: 14px;
+        line-height: normal;
+    }
+    
+    .cv {
+        width: 200px;
+        margin: 20px 20px;
+        padding-left: 70px;
+        font-size: 14px;
+        line-height: normal;
+    }
+    /********************************** ABOUT *********************************/
+    
+    .picofme {
+        /*width: 100%;
     
     opacity: 0.1;*/
-         display: none;
-     }
-     article {
-         width: 100%;
-         margin-left: 0px;
-         margin-top: 140px;
-     }
-     .aboutsection {
-         margin: 10% 0 5% 20px;
-     }
-     .title {
-         margin-top: 20px;
-         margin-bottom: 0;
-     }
-     .arrow {
-         width: 15px;
-     }
-     /********************************** WORK *********************************/
-     .navwrapper {
-         display: none;
-     }
-     .work {
-         width: 100%;
-         margin-top: 140px;
-         margin-left: 0px;
-         margin-bottom: 5%;
-     }
-     .projectsection {
-         width: 100%;
-         margin: 10px 0 70px 0;
-         flex-flow: row;
-         justify-content: center;
-     }
-     .projectinfo {
-         width: 30%;
-         margin: 0;
-         border-left: none;
-     }
-     #atminfo {
-         height: 0px;
-     }
-     
-     #samsunginfo {
-         height: 0px;
-     }
-     #samsung {
+        display: none;
+    }
+    
+    article {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 140px;
+    }
+    
+    .aboutsection {
+        margin: 10% 0 5% 20px;
+    }
+    
+    .title {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    
+    .arrow {
+        width: 15px;
+    }
+    /********************************** WORK *********************************/
+    
+    .navwrapper {
+        display: none;
+    }
+    
+    .work {
+        width: 100%;
+        margin-top: 140px;
+        margin-left: 0px;
+        margin-bottom: 5%;
+    }
+    
+    .projectsection {
+        width: 100%;
+        margin: 10px 0 70px 0;
+        flex-flow: row;
+        justify-content: center;
+    }
+    
+    .projectinfo {
+        width: 30%;
+        margin: 0;
+        border-left: none;
+    }
+    
+    #atminfo {
+        height: 0px;
+    }
+    
+    #samsunginfo {
+        height: 0px;
+    }
+    
+    #samsung {
         width: 380px;
-     height: 240px;
+        height: 240px;
+    }
+    
+    #tokyoinfo {
+        height: 0px;
+    }
+    
+    #tokyo {
+        width: 250px;
+        height: 330px;
+    }
+    
+    #mutandaeinfo {
+        height: 0px;
+    }
+    
+    #spinfo {
+        height: 0px;
+    }
+    
+    #sp {
+        width: 395px;
+        height: 210px;
+    }
+    /********************************** PROJECT *********************************/
+    
+    .projectback {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .atm {
+        background-image: url(img/atm/background2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .projectlogo {
+        width: 100%;
+        height: 60px;
+        margin: 2% auto;
+    }
+    
+    .projectdata {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .white {
+        line-height: .7;
+    }
+    
+    .tools {
+        width: 20%;
+        height: 40px;
+        margin: -3px;
+        margin-top: -10px;
+    }
+    
+    .explanation {
+        margin-left: 20px;
+    }
+    
+    .img {
+        margin-left: 0px;
+        width: 95%;
+    }
+    
+    .article {
+        margin-top: 80px;
+    }
+    /************* ATM ***************/
+    
+    .atm-personas {
+        height: 230px;
+    }
+    
+    .atm-task {
+        height: 350px;
+        margin: 20px 20px;
+    }
+    
+    .atm-zones {
+        height: 400px;
+        margin: -10px 30px;
+    }
+    
+    .atmvideo {
+        width: 80%;
+        margin-left: 10%;
+        padding-bottom: 50px;
+    }
+    /************* SAMSUNG ***************/
+    
+    .nav-white {
+        color: white;
+    }
+    
+    .sams-logo {
+        height: 90px;
+        margin-bottom: 0;
+    }
+    
+    .sams-graphics {
+        height: 150px;
+    }
+    
+    .sams-families {
+        height: 300px;
+        margin-top: 0px;
+    }
+    
+    .sams-pl {
+        height: 300px;
+        margin: 50px 10px;
+    }
+    
+    .sams-game {
+        height: 300px;
+        margin-top: 0px;
+    }
+    
+    .sams-reward {
+        height: 300px;
+        margin-top: 0px;
+    }
+    
+    .sams-touchpoints {
+        height: 50px;
+        margin: 20px;
+    }
+    
+     /************* TOKYO ***************/
+    
+.tokyo-logo {
+    height: 100px;
+    margin-left:0px;
+    margin-bottom:0;
+}
+
+.tokyo-try {
+    height: 120px;
+}
+    
+.tokyo-final {
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+    
+.tokyo-cover {
+    height: 330px;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+    
+.tokyo-article{
+    width: 292px;
+     height: 401px;
+    
+    margin:30px 25%;
+    
+     animation-name: Tokyo;
+     animation-duration: 4s;
+     animation-timing-function: steps(4);
+     animation-iteration-count: infinite;
+ }
+ 
+ @keyframes Tokyo {
+     0% {
+         background-position: 0px 0;
      }
-     #tokyoinfo {
-         height: 0px;
-     }
-     #tokyo {
-         width: 250px;
-     height: 330px;
-     }
-     #mutandaeinfo {
-         height: 0px;
-     }
-     
-     #spinfo {
-         height: 0px;
-     }
-     #sp {
-         width: 395px;
-     height: 210px;
-     }
-     /********************************** PROJECT *********************************/
-     .projectback {
-         position: relative;
-         left: 0;
-         top: 0;
-         width: 100vw;
-         height: 100vh;
-     }
-     .atm {
-         background-image: url(img/atm/background2.jpg);
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-     }
-     .projectlogo {
-         width: 100%;
-         height: 60px;
-         margin: 2% auto;
-     }
-     .projectdata {
-         margin-left: 20px;
-         margin-bottom: 15px;
-     }
-     .white {
-         line-height: .7;
-     }
-     .tools {
-         width: 20%;
-         height: 40px;
-         margin: -3px;
-         margin-top: -10px;
-     }
-     .explanation {
-         margin-left: 20px;
-     }
-     .img {
-         margin-left: 0px;
-         width: 95%;
-     }
-     .article {
-         margin-top: 80px;
-     }
-     /************* ATM ***************/
-     .atm-personas {
-         height: 230px;
-     }
-     .atm-task {
-         height: 350px;
-         margin: 20px 20px;
-     }
-     .atm-zones {
-         height: 400px;
-         margin: -10px 30px;
-     }
-     .atmvideo {
-         width: 80%;
-         margin-left: 10%;
-         padding-bottom: 50px;
-     }
-     /************* SAMSUNG ***************/
-     .nav-white {
-         color: white;
-     }
-     .sams-logo {
-         height: 90px;
-         margin-bottom: 0;
-     }
-     .sams-graphics {
-         height: 150px;
-     }
-     .sams-families {
-         height: 300px;
-         margin-top: 0px;
-     }
-     .sams-pl {
-         height: 300px;
-         margin: 50px 10px;
-     }
-     .sams-game {
-         height: 300px;
-         margin-top: 0px;
-     }
-     .sams-touchpoints {
-         height: 50px;
-         margin: 20px;
+     100% {
+         background-position: 0px -1604px;
      }
  }
- /********************************** MEDIA (mobile portrait) *********************************/
- 
- @media (max-width: 540px) {
-     .backhead {
-         height: 75px;
-     }
-     /********************************** HOME *********************************/
-     nav {
-         margin: 15px auto;
-     }
-     nav ul li {
-         width: 95px;
-         font-size: 13px;
-     }
-     .intro {
-         width: 300px;
-         margin-top: 70%;
-         margin-left: auto;
-     }
-     /*******************************CONTACT *********************************/
-     .myname {
-         display: none;
-     }
-     .contacts {
-         bottom: 30px;
-     }
-     .avatar {
-         position: fixed;
-         bottom: -25px;
-         right: -85px;
-         width: 85%;
-         overflow: hidden;
-         opacity: 0.4;
-     }
-     .logo-container.top {
-         width: 40px;
-         height: 40px;
-         margin: 20px 0 0 20px;
-     }
-     .logo.top {
-         width: 40px;
-         height: 40px;
-     }
-     /********************************** ABOUT *********************************/
-     article {
-         margin-top: 180px;
-     }
-     .aboutsection {
-         margin: 70px 0 30px 20px;
-     }
-     p {
-         font-size: 1em;
-     }
-     .arrow {
-         margin-top: 0;
-         margin-left: 90%;
-     }
-     .allskills {
-         width: 300px;
-     }
-     .programicon {
-         width: 75px;
-     }
-     /********************************** WORK *********************************/
-     .work {
-         margin-top: 180px;
-     }
-     .projectsection {
-         margin: 30px 0 80px 0;
-         flex-flow: column;
-         justify-content: center;
-         align-items:center;
-     }
-     .projectinfo {
-         width: 90%;
-         align-self: flex-start;
-     }
-     #atm {
-         width: 375px;
-         height: 200px;
-         margin-top: 20px;
-         order: 1;
-     }
-     #samsung {
-         width: 375px;
-         height: 250px;
-         margin-left:-40px;
-         margin-top: 20px;
-         order: 1;
-     }
-     #tokyo {
-         width: 230px;
-         height: 300px;
-         margin: 0 auto;
-         margin-top: 20px;
-         order: 1;
-         
-     }
-     #mutandae {
-         width: 375px;
-         height: 200px;
-         margin-top: 20px;
-         order: 1;
-         
-     }
-     #sp {
-         width: 375px;
-     height: 190px;
-         margin-top: 20px;
-         order: 1;
+}
+
+/********************************** MEDIA (mobile portrait) *********************************/
+@media (max-width: 540px) {
+    .backhead {
+        height: 75px;
+    }
+    /********************************** HOME *********************************/
+    
+    nav {
+        margin: 15px auto;
+    }
+    
+    nav ul li {
+        width: 95px;
+        font-size: 13px;
+    }
+    
+    .intro {
+        width: 300px;
+        margin-top: 70%;
+        margin-left: auto;
+    }
+    /*******************************CONTACT *********************************/
+    
+    .myname {
+        display: none;
+    }
+    
+    .contacts {
+        bottom: 30px;
+    }
+    
+    .avatar {
+        position: fixed;
+        bottom: -25px;
+        right: -85px;
+        width: 85%;
+        overflow: hidden;
+        opacity: 0.4;
+    }
+    
+    .logo-container.top {
+        width: 40px;
+        height: 40px;
+        margin: 20px 0 0 20px;
+    }
+    
+    .logo.top {
+        width: 40px;
+        height: 40px;
+    }
+    /********************************** ABOUT *********************************/
+    
+    article {
+        margin-top: 180px;
+    }
+    
+    .aboutsection {
+        margin: 70px 0 30px 20px;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    .arrow {
+        margin-top: 0;
+        margin-left: 90%;
+    }
+    
+    .allskills {
+        width: 300px;
+    }
+    
+    .programicon {
+        width: 75px;
+    }
+    /********************************** WORK *********************************/
+    
+    .work {
+        margin-top: 180px;
+    }
+    
+    .projectsection {
+        margin: 30px 0 80px 0;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .projectinfo {
+        width: 90%;
+        align-self: flex-start;
+    }
+    
+    #atm {
+        width: 375px;
+        height: 200px;
+        margin-top: 20px;
+        order: 1;
+    }
+    
+    #samsung {
+        width: 375px;
+        height: 250px;
+        margin-left: -40px;
+        margin-top: 20px;
+        order: 1;
+    }
+    
+    #tokyo {
+        width: 230px;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+        order: 1;
+    }
+    
+    #mutandae {
+        width: 375px;
+        height: 200px;
+        margin-top: 20px;
+        order: 1;
+    }
+    
+    #sp {
+        width: 375px;
+        height: 190px;
+        margin-top: 20px;
+        order: 1;
+    }
+    /********************************** PROJECT *********************************/
+    
+    .projectback {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .atm {
+        background-image: url(img/atm/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .projectlogo {
+        width: 100%;
+        height: 60px;
+        margin: 30% auto;
+    }
+    
+    .projectdata {
+        margin-left: 20px;
+        margin-bottom: 85px;
+    }
+    
+    .white {
+        line-height: .5;
+    }
+    
+    .tools {
+        width: 40%;
+        margin-top: -10px;
+        margin-left: 5px
+    }
+    
+    .explanation {
+        margin-left: 20px;
+    }
+    
+    .img {
+        margin-left: 0px;
+        width: 95%;
+    }
+    /************* ATM ***************/
+    
+    .atm-personas {
+        height: 150px;
+        margin: 0;
+    }
+    
+    .atm-task {
+        height: 200px;
+        margin: 0 10px;
+    }
+    
+    .atm-zones {
+        height: 400px;
+        margin: -80px 0;
+    }
+    
+    .atmvideo {
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 50px;
+    }
+    /************* SAMSUNG ***************/
+    
+    .sams-logo {
+        height: 80px;
+        margin: 30% auto;
+    }
+    
+    .sams-graphics {
+        height: 90px;
+        background-image: url(img/samsung/sams-graphics2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .sams-families {
+        height: 300px;
+        margin-top: -20px;
+    }
+    
+    .sams-pl {
+        height: 250px;
+        margin: 40px 5px;
+    }
+    
+    .sams-game {
+        height: 300px;
+        margin-top: -20px;
+    }
+    
+    .sams-reward {
+        height: 300px;
+        margin-top: -20px;
+    }
+    
+    .sams-touchpoints {
+        width: 90%;
+        height: 60px;
+        margin: auto;
+    }
+    
         
-     }
-     /********************************** PROJECT *********************************/
-     .projectback {
-         position: relative;
-         left: 0;
-         top: 0;
-         width: 100vw;
-         height: 100vh;
-     }
-     .atm {
-         background-image: url(img/atm/background.jpg);
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-     }
-     .projectlogo {
-         width: 100%;
-         height: 60px;
-         margin: 30% auto;
-     }
-     .projectdata {
-         margin-left: 20px;
-         margin-bottom: 85px;
-     }
-     .white {
-         line-height: .5;
-     }
-     .tools {
-         width: 40%;
-         margin-top: -10px;
-         margin-left: 5px
-     }
-     .explanation {
-         margin-left: 20px;
-     }
-     .img {
-         margin-left: 0px;
-         width: 95%;
-     }
-     /************* ATM ***************/
-     .atm-personas {
-         height: 150px;
-         margin: 0;
-     }
-     .atm-task {
-         height: 200px;
-         margin: 0 10px;
-     }
-     .atm-zones {
-         height: 400px;
-         margin: -80px 0;
-     }
-     .atmvideo {
-         width: 90%;
-         margin-left: 5%;
-         padding-bottom: 50px;
-     }
-     /************* SAMSUNG ***************/
-     .sams-logo {
-         height: 80px;
-         margin: 30% auto;
-     }
-     .sams-graphics {
-         height: 90px;
-         background-image: url(img/samsung/sams-graphics2.png);
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: contain;
-     }
-     .sams-families {
-         height: 300px;
-         margin-top: -20px;
-     }
-     .sams-pl {
-         height: 250px;
-         margin: 40px 5px;
-     }
-     .sams-game {
-         height: 300px;
-         margin-top: -20px;
-     }
-     .sams-touchpoints {
-         width: 90%;
-         height: 60px;
-         margin: auto;
-     }
+     /************* TOKYO ***************/
+    
+.tokyo-logo {
+    height: 120px;
+    margin:30% auto;
+}
+
+.tokyo-try {
+    height: 120px;
+    margin:0 auto;
+}
+    
+.tokyo-final {
+    height: 120px;
+    margin:40px auto;
+    
+}
+    
+.tokyo-cover {
+    height: 420px;
+    
+   margin:40px auto;
+}
+    
+.tokyo-article{
+    width: 292px;
+     height: 401px;
+    
+    margin:30px auto;
+    
+     animation-name: Tokyo;
+     animation-duration: 4s;
+     animation-timing-function: steps(4);
+     animation-iteration-count: infinite;
  }
- /********************************** MEDIA (iphone5) *********************************/
  
- @media (max-width: 370px) {
-     nav ul li {
-         width: 75px;
+ @keyframes Tokyo {
+     0% {
+         background-position: 0px 0;
+     }
+     100% {
+         background-position: 0px -1604px;
      }
  }
+}
+
+/********************************** MEDIA (iphone5) *********************************/
+@media (max-width: 370px) {
+    nav ul li {
+        width: 75px;
+    }
+}
