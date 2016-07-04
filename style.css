@@ -648,6 +648,8 @@
 }
 
 /********************************** PROJECT *********************************/
+
+
 .projectback {
     position: fixed;
     left: 0;
@@ -1141,7 +1143,7 @@
     }
     
     .sams-families {
-        height: 300px;
+        height: 400px;
         margin-top: 0px;
     }
     
@@ -1151,12 +1153,12 @@
     }
     
     .sams-game {
-        height: 300px;
+        height: 400px;
         margin-top: 0px;
     }
     
     .sams-reward {
-        height: 300px;
+        height: 400px;
         margin-top: 0px;
     }
     
@@ -1166,7 +1168,7 @@
     }
     
     /************* TOKYO ***************/
-    
+       
 .tokyo-logo {
     height: 200px;
     margin-left: 10px;
@@ -1289,6 +1291,7 @@
     .myname {
      margin-left: 0px;
  }
+    
     .contactnav {
         font-weight: 300;
         color: #EF7E64;
@@ -1408,6 +1411,22 @@
     }
     /********************************** PROJECT *********************************/
     
+    .nav-white{
+        color: white;
+    }
+    
+    .nav-white:hover {
+        color: white;
+    }
+    
+    .border{
+        border-left:1px solid white;
+        border-right:1px solid white;
+    }
+    
+    .backhead{
+    height:100px;
+}
     .projectback {
         position: relative;
         left: 0;
@@ -1459,6 +1478,11 @@
     }
     /************* ATM ***************/
     
+    
+    .foratm{
+        background-color: #CF8230;
+    }
+    
     .atm-personas {
         height: 230px;
     }
@@ -1480,8 +1504,15 @@
     }
     /************* SAMSUNG ***************/
     
-    .nav-white {
+    
+    
+    .nav-white:hover {
         color: white;
+    }
+    
+    
+    .forsams{
+        background-color: #343434; 
     }
     
     .sams-logo {
@@ -1494,7 +1525,7 @@
     }
     
     .sams-families {
-        height: 300px;
+        height: 400px;
         margin-top: 0px;
     }
     
@@ -1504,12 +1535,12 @@
     }
     
     .sams-game {
-        height: 300px;
+        height: 400px;
         margin-top: 0px;
     }
     
     .sams-reward {
-        height: 300px;
+        height: 400px;
         margin-top: 0px;
     }
     
@@ -1526,6 +1557,10 @@
     margin-bottom:0;
 }
 
+.fortok{
+        background-color: black; 
+    }    
+    
 .tokyo-try {
     height: 120px;
 }
@@ -1742,6 +1777,9 @@
         width: 95%;
     }
     /************* ATM ***************/
+    .foratm{
+        background-color: #D58936;
+    }
     
     .atm-personas {
         height: 150px;
@@ -1779,8 +1817,9 @@
     }
     
     .sams-families {
-        height: 300px;
+        height: 400px;
         margin-top: -20px;
+        overflow: hidden;
     }
     
     .sams-pl {
@@ -1789,12 +1828,12 @@
     }
     
     .sams-game {
-        height: 300px;
+        height: 400px;
         margin-top: -20px;
     }
     
     .sams-reward {
-        height: 300px;
+        height: 400px;
         margin-top: -20px;
     }
     
@@ -1809,7 +1848,7 @@
     
 .tokyo-logo {
     height: 120px;
-    margin:30% auto;
+    margin:15% auto;
 }
 
 .tokyo-try {
@@ -1849,6 +1888,7 @@
          background-position: 0px -1604px;
      }
  }
+
 }
 
 /********************************** MEDIA (iphone5) *********************************/
@@ -1856,4 +1896,5 @@
     nav ul li {
         width: 75px;
     }
+    
 }
