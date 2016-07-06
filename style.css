@@ -421,7 +421,7 @@
  .work {
      width: 80%;
      margin-top: 250px;
-     margin-left: 25%;
+     margin-left: 20%;
      margin-bottom: 17%;
  }
  
@@ -571,10 +571,11 @@
          background-position: 0px -2404px;
      }
  }
-}
+
 .tokyosection:hover .special {
     color: #EF7E64;
 }
+
 .tokyosection:hover .see {
     visibility: visible;
 }
@@ -858,7 +859,7 @@
      background-position: top;
     
      animation-name: Tokyo;
-     animation-duration: 4s;
+     animation-duration: 8s;
      animation-timing-function: steps(4);
      animation-iteration-count: infinite;
  }
@@ -871,7 +872,58 @@
          background-position: 0px -2404px;
      }
  }
+
+
+/************* mutandae ***************/
+.mut {
+    background-color: #B99887;
+}
+.mut-logo {
+    background-image: url(img/mutandae/mutandae-logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mut-tools {
+    background-image: url(img/mutandae/mut-tools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mut-home {
+    height: 1200px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-image: url(img/mutandae/mutandae-home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mut-interview {
+    width:800px;
+    height: 500px;
     
+    margin: 0 3%;
+    
+    background-image: url(img/mutandae/mut-interview.png) ;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+     animation-name: Mut;
+     animation-duration: 4s;
+     animation-timing-function: steps(2);
+     animation-iteration-count: infinite;
+ }
+ 
+ @keyframes Mut {
+     0% {
+         background-position: 0px 0;
+     }
+     100% {
+         background-position: 0px -1000px;
+     }
+ }  
 
 /*********************************** MEDIA (iPad) **********************************/
 @media (max-width: 1115px) {
@@ -1212,6 +1264,34 @@
          background-position: 0px -1604px;
      }
  }
+    
+    
+/************* mutandae ***************/
+
+.mut-logo {
+    margin-left: 3%;
+}
+
+.mut-home {
+    height: 900px;
+    margin-top: 0px;
+    margin-bottom: 30px;   
+}
+.mut-interview {
+    width:500px;
+    height: 312px;
+    
+    margin: 0 auto;
+ }
+ 
+ @keyframes Mut {
+     0% {
+         background-position: 0px 0;
+     }
+     100% {
+         background-position: 0px -624px;
+     }
+ }  
 }
 
 
@@ -1504,15 +1584,12 @@
     }
     /************* SAMSUNG ***************/
     
-    
+    .forsams {
+    background-color: #343434;
+}
     
     .nav-white:hover {
         color: white;
-    }
-    
-    
-    .forsams{
-        background-color: #343434; 
     }
     
     .sams-logo {
@@ -1550,16 +1627,15 @@
     }
     
      /************* TOKYO ***************/
+  .fortok {
+    background-color: black;
+}
     
 .tokyo-logo {
     height: 100px;
     margin-left:0px;
     margin-bottom:0;
-}
-
-.fortok{
-        background-color: black; 
-    }    
+}   
     
 .tokyo-try {
     height: 120px;
@@ -1596,6 +1672,33 @@
      }
      100% {
          background-position: 0px -1604px;
+     }
+ }
+    
+    
+/************* mutandae ***************/
+.formut {
+    background-color: #B99887;
+}
+
+.mut-home {
+    height: 900px;
+    margin-top: 0px;
+    margin-bottom: 30px;   
+}
+.mut-interview {
+    width:500px;
+    height: 312px;
+    
+    margin: 0 auto;
+ }
+ 
+ @keyframes Mut {
+     0% {
+         background-position: 0px 0;
+     }
+     100% {
+         background-position: 0px -624px;
      }
  }
 }
@@ -1886,6 +1989,28 @@
      }
      100% {
          background-position: 0px -1604px;
+     }
+ 
+    }
+     /************* mutandae ***************/
+.mut-home {
+    height: 690px;
+    margin: 0 auto;
+    margin-bottom: 30px;   
+}
+.mut-interview {
+    width:320px;
+    height: 200px;
+    
+    margin: 0 auto;
+ }
+ 
+ @keyframes Mut {
+     0% {
+         background-position: 0px 0;
+     }
+     100% {
+         background-position: 0px -400px;
      }
  }
 
