@@ -309,7 +309,7 @@
      width: 25%;
  }
  /********************************** ABOUT *********************************/
- 
+
  .picofme {
      position: fixed;
      left: 0;
@@ -991,7 +991,7 @@
     }
     
     .aboutsection {
-        margin: 5% 0 20% 30px;
+        margin: 10% 0 10% 30px;
     }
     
     p {
@@ -1404,6 +1404,18 @@
     }
     /********************************** ABOUT *********************************/
     
+    .small-me{
+    width: 95%;
+    height: 100px;
+        
+    background-image: url(img/small-io.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    display:inline-block;
+}
+    
     .picofme {
         /*width: 100%;
     
@@ -1418,7 +1430,7 @@
     }
     
     .aboutsection {
-        margin: 10% 0 5% 20px;
+        margin: 5% 0 5% 20px;
     }
     
     .title {
@@ -1754,6 +1766,11 @@
         height: 40px;
     }
     /********************************** ABOUT *********************************/
+    
+    .small-me{
+    width: 95%;
+    height: 100px;
+}
     
     article {
         margin-top: 180px;
