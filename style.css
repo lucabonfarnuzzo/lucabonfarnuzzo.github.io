@@ -2089,8 +2089,7 @@
             /************* SYMPHONIAM PARK ***************/
 .sp-plant {
     height: 270px;
-    margin-top:0px;
-    margin-bottom:0px;
+    margin:0 auto;
 }
 
 }
