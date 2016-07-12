@@ -925,6 +925,36 @@
      }
  }  
 
+
+
+/************* SYMPHONIAM PARK ***************/
+.sp {
+    background-image: url(img/sp/sp-back1.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-subtitle{
+    line-height: 0;;
+}
+
+.sp-tools {
+    background-image: url(img/sp/sp-tools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sp-plant {
+    height: 500px;
+    margin-top:20px;
+    margin-bottom:40px;
+    background-image: url(img/sp/sp-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 /*********************************** MEDIA (iPad) **********************************/
 @media (max-width: 1115px) {
     /********************************** HOME *********************************/
@@ -1291,7 +1321,14 @@
      100% {
          background-position: 0px -624px;
      }
- }  
+ }
+    
+    /************* SYMPHONIAM PARK ***************/
+.sp-plant {
+    height: 340px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
 }
 
 
@@ -1713,6 +1750,24 @@
          background-position: 0px -624px;
      }
  }
+    
+        /************* SYMPHONIAM PARK ***************/
+    .forsp{
+        background-color: #9b978f;
+    }   
+    .sp {
+    background-image: url(img/sp/sp-back.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.sp-plant {
+    height: 380px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
 }
 
 /********************************** MEDIA (mobile portrait) *********************************/
@@ -2030,6 +2085,13 @@
          background-position: 0px -400px;
      }
  }
+    
+            /************* SYMPHONIAM PARK ***************/
+.sp-plant {
+    height: 270px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
 
 }
 
