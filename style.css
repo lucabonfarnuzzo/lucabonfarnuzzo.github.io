@@ -465,7 +465,7 @@
  }
  
  #atminfo {
-     height: 170px;
+     height: 100px;
  }
  
  #atm {
@@ -727,6 +727,14 @@
 
 .next:hover{
     color: #EF7E64;  
+}
+
+.first{
+    visibility: hidden;
+}
+
+.last{
+    visibility: hidden;
 }
 
 /************* ATM ***************/
@@ -1672,17 +1680,24 @@
     .footer{
     width: 90%;
     margin-left: 20px;
-}
+    }
 
-.prev{
+    .prev{
     width: 45px;
     font-size: 13px;  
-}
+    }
 
-.next{
+    .next{
     width: 45px;
     font-size: 13px;   
+    }
+    
+    .gone{
+  transform: translateY(-170px);
+  transition: transform .8s ease-out;
 }
+    
+    
 
     /************* ATM ***************/
     
@@ -2075,7 +2090,7 @@
     
     .sams-logo {
         height: 80px;
-        margin: 30% auto;
+        margin: 25% auto;
     }
     
     .sams-graphics {
@@ -2191,8 +2206,48 @@
 
 /********************************** MEDIA (iphone5) *********************************/
 @media (max-width: 370px) {
+    
     nav ul li {
         width: 75px;
     }
+   
+     /********************************** WORK *********************************/
     
+    #atm {
+        width: 320px;
+        height: 150px;
+        margin-left:-20px;
+        margin-top: 20px;
+        order: 1;
+    }
+    #samsung {
+        width: 320px;
+        height: 210px;
+        margin: 0px;
+        margin-left: -80px;
+        margin-top: 20px;
+        order: 1;
+    }
+    
+    #tokyo {
+        width: 230px;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+        order: 1;
+    }
+    
+    #mutandae {
+        width: 320px;
+        height: 150px;
+        margin-top: 20px;
+        order: 1;
+    }
+    
+    #sp {
+        width: 320px;
+        height: 170px;
+        margin-top: 20px;
+        order: 1;
+    }
 }
