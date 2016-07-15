@@ -759,7 +759,7 @@
 }
 .atm-personas {
     height: 300px;
-    background-image: url(img/atm/personas.png);
+    background-image: url(img/atm/personas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -767,7 +767,7 @@
 .atm-task {
     height: 350px;
     margin: 40px 30px;
-    background-image: url(img/atm/task-flow.png);
+    background-image: url(img/atm/task-flow.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -775,7 +775,7 @@
 .atm-zones {
     height: 700px;
     margin: -100px 30px;
-    background-image: url(img/atm/atm-zones.png);
+    background-image: url(img/atm/atm-zones.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -806,7 +806,7 @@
 }
 .sams-graphics {
     height: 200px;
-    background-image: url(img/samsung/sams-graphics.png);
+    background-image: url(img/samsung/sams-graphics.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -822,7 +822,7 @@
 .sams-pl {
     height: 300px;
     margin: 80px 0;
-    background-image: url(img/samsung/4%20Screens.png);
+    background-image: url(img/samsung/4%20Screens.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -873,13 +873,13 @@
 }
 .tokyo-try {
     height: 160px;
-    background-image: url(img/typography/tokyo-tries-03.png);
+    background-image: url(img/typography/tokyo-tries-03.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 .tokyo-final {
-    height: 160px;
+    height: 171px;
     margin-top: 40px;
     margin-bottom: 60px;
     background-image: url(img/typography/tokyo-final-03.png);
@@ -955,7 +955,7 @@
     width:800px;
     height: 500px;
     
-    margin: 0 4%;
+    margin-left:4%;
     
     background-image: url(img/mutandae/mut-interview.png) ;
     background-position: top;
@@ -1895,7 +1895,7 @@
         margin-top: 70%;
         margin-left: auto;
     }
-    /*******************************CONTACT *********************************/
+    /******************************* CONTACT *********************************/
     
     .myname {
         display: none;
@@ -2034,7 +2034,7 @@
     
     .projectdata {
         margin-left: 20px;
-        margin-bottom: 85px;
+        margin-bottom: 80px;
     }
     
     .white {
@@ -2068,8 +2068,15 @@
     }
     
     .atm-personas {
+    
+        
         height: 150px;
         margin: 0;
+        
+    background-image: url(img/atm/personas-mob.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     }
     
     .atm-task {
@@ -2091,7 +2098,7 @@
     
     .sams-logo {
         height: 80px;
-        margin: 25% auto;
+        margin: 20% auto;
     }
     
     .sams-graphics {
@@ -2195,11 +2202,11 @@
      100% {
          background-position: 0px -400px;
      }
- }
+    }
     
             /************* SYMPHONIAM PARK ***************/
 .sp-plant {
-    height: 250px;
+    height: 260px;
     margin:0 auto;
 }
 
