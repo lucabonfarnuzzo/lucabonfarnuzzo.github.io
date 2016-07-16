@@ -997,11 +997,30 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-.sp-plant {
+.sp-map {
     height: 500px;
     margin-top:20px;
     margin-bottom:40px;
     background-image: url(img/sp/sp-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sp-installations {
+    height: 380px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-image: url(img/sp/guado.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sp-gesture{
+    height: 300px;
+    margin-top: 20px;
+    background-image: url(img/sp/plant-horizontal.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1398,11 +1417,27 @@
  }
     
     /************* SYMPHONIAM PARK ***************/
-.sp-plant {
+.sp-map {
     height: 340px;
     margin-top:0px;
     margin-bottom:0px;
+}  
+
+.sp-installations {
+    height: 280px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+.sp-gesture{
+    height: 1000px;
+    margin-top: 30px;
+    background-image: url(img/sp/plant.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+    
 }
 
 
@@ -1866,10 +1901,28 @@
     background-size: cover;
 }
     
-.sp-plant {
+.sp-map {
     height: 380px;
     margin-top:0px;
     margin-bottom:0px;
+}
+    
+
+.sp-installations {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sp-gesture{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    background-image: url(img/sp/plant-horizontal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 }
@@ -2205,11 +2258,26 @@
     }
     
             /************* SYMPHONIAM PARK ***************/
-.sp-plant {
+.sp-map {
     height: 260px;
     margin:0 auto;
 }
 
+    .sp-installations {
+    width: 100%;
+    height: 220px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sp-gesture{
+    height: 1000px;
+    margin: 0 auto;
+    background-image: url(img/sp/plant.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 }
 
 /********************************** MEDIA (iphone5) *********************************/
