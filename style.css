@@ -1,577 +1,584 @@
 * {
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
- }
- 
- body {
-     margin: 0;
-     background-color: white/*#F0F0F0*/
-     ;
- }
- 
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- li {
-     font-family: "Source Code Pro", sans-serif;
-     color: #565656;
- }
- 
- p {
-     font-family: 'Source Sans Pro', sans-serif;
-     color: #565656;
-     font-weight: 100;
-     line-height: 1.7em;
- }
- 
- .backhead {
-     position: fixed;
-     top: 0;
-     right: 0;
-     width: 80%;
-     height: 80px;
-     background-color: white;
-     z-index: 1;
- }
- /********************************** HOME *********************************/
- 
- .home {
-     width: 100vw;
-     height: 100vh;
-     background-color: white;
- }
- 
- header {
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: flex-end;
-     z-index: 2;
- }
- 
- nav {
-     margin: 20px 15px 0 0;
- }
- 
- ul {
-     padding-left: 0;
- }
- 
- nav ul li {
-     width: 150px;
-     display: inline-block;
-     text-align: center;
-     font-size: 14px;
- }
- 
- a {
-     text-decoration: none;
-     color: #3f3f3f;
-     font-weight: 300;
- }
- 
- nav ul li a:hover {
-     color: #EF7E64;
- }
- 
- .worknav {
-     border-left: 1px solid #646464;
-     border-right: 1px solid #646464;
- }
- 
- .intro {
-     width: 500px;
-     position: absolute;
-     bottom: 20%;
-     left: 20px;
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: flex-start;
-     align-items: center;
- }
- 
- .logo-container {
-     width: 80px;
-     height: 80px;
-     margin: 30px;
-     background-color: #62B4C6;
-     border-radius: 50%;
- }
- 
- .logo {
-     width: 80px;
-     height: 80px;
- }
- 
- h4 {
-     font-size: 14px;
-     font-weight: 300;
- }
- 
- .subtitle {
-     visibility: hidden;
-     position: absolute;
-     bottom: 15%;
-     left: 140px;
-     color: #EF7E64;
- }
- 
- .intro:hover .logo-container {
-     background-color: #EF7E64;
- }
- 
- .intro:hover .subtitle {
-     visibility: visible;
- }
- 
- .home-title {
-     height: 25px;
-     margin-top: -20px;
-     overflow: hidden;
- }
- 
- h2 {
-     display: inline;
-     font-size: 18px;
-     font-weight: 300;
- }
- 
- .changing {
-     margin-top: -31px;
-     padding-left: 100px;
-     list-style: none;
-     font-size: 18px;
-     font-weight: 500;
-     animation: 12s linear 1.5s normal forwards infinite carousel;
- }
- 
- .changing li {
-     line-height: 40px;
-     margin: 0;
- }
- 
- @keyframes carousel {
-     0%,
-     12%,
-     100% {
-         transform: translateY(0);
-     }
-     17%,
-     29% {
-         transform: translateY(-25%);
-     }
-     34%,
-     46% {
-         transform: translateY(-50%);
-     }
-     51%,
-     63% {
-         transform: translateY(-75%);
-     }
-     68%,
-     80% {
-         transform: translateY(-50%);
-     }
-     85%,
-     97% {
-         transform: translateY(-25%);
-     }
- }
- /********************************** CONTACT *********************************/
- 
- .head {
-     width: 100%;
-     position: fixed;
-     top: 0;
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: space-between;
-     z-index: 3;
- }
- 
- .logo-container.top {
-     width: 50px;
-     height: 50px;
-     margin: 20px 30px;
- }
- 
- .logo.top {
-     width: 50px;
-     height: 50px;
- }
- 
- .me {
-     display: flex;
-     flex-flow: row wrap;
-     align-items: center;
- }
- 
- .me:hover .logo-container {
-     background-color: #EF7E64;
- }
- 
- .myname {
-     color: black;
-     /*text-shadow:0px 0px 5px #f0f0f0;*/
-     margin-left: -20px;
- }
- 
- .selected {
-     font-weight: 300;
-     text-decoration: line-through;
-     color: #EF7E64;
- }
- 
- .contacts {
-     position: absolute;
-     bottom: 7%;
- }
- 
- h1 {
-     margin: 30px;
-     font-size: 24px;
-     font-weight: 500;
- }
- 
- .mail {
-     width: 600px;
-     height: 40px;
-     margin: 20px 30px;
-     padding-left: 80px;
-     font-family: 'Source Sans Pro', sans-serif;
-     font-size: 16px;
-     font-weight: 300;
-     line-height: 40px;
-     color: ##565656;
-     background-image: url(img/busta.png);
-     background-repeat: no-repeat;
-     background-position: left;
-     background-size: contain;
- }
- 
- .mail a {
-     font-family: "Source Code Pro", sans-serif;
-     font-weight: 500;
-     color: #62B4C6;
- }
- 
- .mail:hover a {
-     color: #EF7E64;
- }
- 
- .mail:hover {
-     background-image: url(img/busta2.jpg);
-     background-repeat: no-repeat;
-     background-position: left;
-     background-size: contain;
- }
- 
- .cv {
-     width: 600px;
-     height: 40px;
-     margin: 20px 30px;
-     padding-left: 80px;
-     font-family: 'Source Sans Pro', sans-serif;
-     font-size: 16px;
-     font-weight: 300;
-     line-height: 40px;
-     color: ##565656;
-     background-image: url(img/graffetta.png);
-     background-repeat: no-repeat;
-     background-position: left;
-     background-size: contain;
- }
- 
- .cv a {
-     font-family: "Source Code Pro", sans-serif;
-     font-weight: 500;
-     color: #62B4C6;
- }
- 
- .cv:hover a {
-     color: #EF7E64;
- }
- 
- .cv:hover {
-     background-image: url(img/graffetta2.png);
-     background-repeat: no-repeat;
-     background-position: left;
-     background-size: contain;
- }
- 
- .avatar {
-     position: fixed;
-     bottom: -25px;
-     right: -5px;
-     width: 25%;
- }
- /********************************** ABOUT *********************************/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
- .picofme {
-     position: fixed;
-     left: 0;
-     top: 0;
-     width: 20%;
-     height: 100vh;
-     background-image: url(img/io.jpg);
-     background-position: left;
-     background-repeat: no-repeat;
-     background-size: cover;
- }
- 
- article {
-     width: 75%;
-     margin-left: 25%;
-     margin-top: 250px;
-     margin-bottom: 50px;
-     z-index: -1;
- }
- 
- .aboutsection {
-     margin: 5% 0 25% 30px;
- }
- 
- p {
-     width: 80%;
-     font-family: 'Source Sans Pro', sans-serif;
- }
- 
- .arrow {
-     width: 20px;
-     margin-left: 75%;
- }
- 
- .infodata {
-     margin: 0;
- }
- 
- .title {
-     margin-top: 30px;
-     margin-bottom: 0;
- }
- 
- .programicon {
-     width: 100px;
- }
- 
- .flag {
-     margin-top: 10px;
- }
- 
- .allskills {
-     width: 100%;
-     margin-top: 30px;
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: space-between;
- }
- 
- .family {
-     margin-bottom: 10px;
-     
-     display: flex;
-     flex-flow: row wrap;
-     align-items: center;
- }
- /********************************** WORK *********************************/
- 
- .navwrapper {
-     position: fixed;
-     left: 30px;
-     top: 0px;
-     width: 20%;
-     height: 100vh;
-     display: flex;
-     flex-flow: column wrap;
-     justify-content: center;
- }
- 
- .portabarrette {
-     height: 30px;
-     margin: 20px 0;
-     display: flex;
-     flex-flow: row wrap;
-     align-items: center;
- }
- 
- .barrette {
-     width: 10px;
-     height: 4px;
-     margin: 5px 5px;
-     background-color: lightgray;
-     transition: width 2s ease .1s;
- }
- 
- .short {
-     font-size: 13px;
- }
- 
- .portabarrette:hover .barrette {
-     width: 33px;
-     transition: width 1s ease .1s;
- }
- 
- .portabarrette:hover .short {
-     color: #EF7E64;
-     transition: color .1s ease 0;
- }
- 
- .work {
-     width: 80%;
-     margin-top: 250px;
-     margin-left: 20%;
-     margin-bottom: 17%;
- }
- 
- .projectsection {
-     width: 100%;
-     /*margin: 2% 0 20% 0;*/
-     margin: 0;
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: space-around;
-     align-items: center;
- }
- 
- .projectinfo {
-     width: 270px;
-     padding-left: 20px;
-     margin-right: 25px;
-     border-left: 1px solid lightgrey;
- }
- 
- .infodata {
-     margin: 0;
- }
- 
- .special {
-     font-weight: 500;
-     letter-spacing: 1px;
-     color: #62B4C6;
- }
- 
- h3 {
-     font-size: 16px;
-     line-height: 2;
- }
- 
- .see {
-     visibility: hidden;
-     color: #EF7E64;
-     padding: 0;
-     margin: 5px 0 0 0;
- }
- 
- #atminfo {
-     height: 100px;
- }
- 
- #atm {
-     width: 584px;
-     height: 300px;
-     overflow: hidden;
-     background-image: url(img/atm/atm-sprite.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: top;
- }
- 
- .atmsection:hover #atm {
-     animation-name: hoverAtm;
-     animation-duration: 4s;
-     animation-timing-function: steps(4);
-     animation-iteration-count: infinite;
- }
- 
- @keyframes hoverAtm {
-     0% {
-         background-position: 0 0;
-     }
-     100% {
-         background-position: 0 -1200px;
-     }
- }
- 
- .atmsection:hover .special {
-     color: #EF7E64;
- }
- 
- .atmsection:hover .see {
-     visibility: visible;
- }
- 
- #samsunginfo {
-     height: 170px;
- }
- 
- #samsung {
-     width: 547px;
-     height: 375px;
-     margin-right: 40px;
-     overflow: hidden;
-     background-image: url(img/samsung/sams-sprite.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: 40px top;
- }
- 
- .samsungsection:hover #samsung {
-     animation-name: hoverSams;
-     animation-duration: 6s;
-     animation-timing-function: steps(6);
-     animation-iteration-count: infinite;
- }
- 
- @keyframes hoverSams {
-     0% {
-         background-position: 40px 0;
-     }
-     100% {
-         background-position: 40px -2250px;
-     }
- }
- 
- .samsungsection:hover .special {
-     color: #EF7E64;
- }
- 
- .samsungsection:hover .see {
-     visibility: visible;
- }
- 
- #tokyoinfo {
-     height: 170px;
- }
- 
- #tokyo {
-     width: 292px;
-     height: 401px;
-     margin-left: 170px;
-     margin-right: 130px;
-     background-image: url(img/typography/tokyo-sprite.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: 0px top;
- }
- 
- .tokyosection:hover #tokyo {
-     animation-name: hoverTokyo;
-     animation-duration: 6s;
-     animation-timing-function: steps(6);
-     animation-iteration-count: infinite;
- }
- 
- @keyframes hoverTokyo {
-     0% {
-         background-position: 0px 0;
-     }
-     100% {
-         background-position: 0px -2406px;
-     }
- }
+body {
+    margin: 0;
+    background-color: white/*#F0F0F0*/
+    ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+    font-family: "Source Code Pro", sans-serif;
+    color: #565656;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #565656;
+    font-weight: 100;
+    line-height: 1.7em;
+}
+
+.backhead {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 80px;
+    background-color: white;
+    z-index: 1;
+}
+
+
+/********************************** HOME *********************************/
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+nav {
+    margin: 20px 15px 0 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+nav ul li {
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #3f3f3f;
+    font-weight: 300;
+}
+
+nav ul li a:hover {
+    color: #EF7E64;
+}
+
+.worknav {
+    border-left: 1px solid #646464;
+    border-right: 1px solid #646464;
+}
+
+.intro {
+    width: 500px;
+    position: absolute;
+    bottom: 20%;
+    left: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-container {
+    width: 80px;
+    height: 80px;
+    margin: 30px;
+    background-color: #62B4C6;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.subtitle {
+    visibility: hidden;
+    position: absolute;
+    bottom: 15%;
+    left: 140px;
+    color: #EF7E64;
+}
+
+.intro:hover .logo-container {
+    background-color: #EF7E64;
+}
+
+.intro:hover .subtitle {
+    visibility: visible;
+}
+
+.home-title {
+    height: 25px;
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+h2 {
+    display: inline;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.changing {
+    margin-top: -31px;
+    padding-left: 100px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    animation: 12s linear 1.5s normal forwards infinite carousel;
+}
+
+.changing li {
+    line-height: 40px;
+    margin: 0;
+}
+
+@keyframes carousel {
+    0%,
+    12%,
+    100% {
+        transform: translateY(0);
+    }
+    17%,
+    29% {
+        transform: translateY(-25%);
+    }
+    34%,
+    46% {
+        transform: translateY(-50%);
+    }
+    51%,
+    63% {
+        transform: translateY(-75%);
+    }
+    68%,
+    80% {
+        transform: translateY(-50%);
+    }
+    85%,
+    97% {
+        transform: translateY(-25%);
+    }
+}
+
+
+/********************************** CONTACT *********************************/
+
+.head {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.logo-container.top {
+    width: 50px;
+    height: 50px;
+    margin: 20px 30px;
+}
+
+.logo.top {
+    width: 50px;
+    height: 50px;
+}
+
+.me {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.me:hover .logo-container {
+    background-color: #EF7E64;
+}
+
+.myname {
+    color: black;
+    /*text-shadow:0px 0px 5px #f0f0f0;*/
+    margin-left: -20px;
+}
+
+.selected {
+    font-weight: 300;
+    text-decoration: line-through;
+    color: #EF7E64;
+}
+
+.contacts {
+    position: absolute;
+    bottom: 7%;
+}
+
+h1 {
+    margin: 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.mail {
+    width: 600px;
+    height: 40px;
+    margin: 20px 30px;
+    padding-left: 80px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+    color: #565656;
+    background-image: url(img/busta.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.mail a {
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 500;
+    color: #62B4C6;
+}
+
+.mail:hover a {
+    color: #EF7E64;
+}
+
+.mail:hover {
+    background-image: url(img/busta2.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.cv {
+    width: 600px;
+    height: 40px;
+    margin: 20px 30px;
+    padding-left: 80px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+    color: #565656;
+    background-image: url(img/graffetta.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.cv a {
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 500;
+    color: #62B4C6;
+}
+
+.cv:hover a {
+    color: #EF7E64;
+}
+
+.cv:hover {
+    background-image: url(img/graffetta2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.avatar {
+    position: fixed;
+    bottom: -25px;
+    right: -5px;
+    width: 25%;
+}
+
+
+/********************************** ABOUT *********************************/
+
+.picofme {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+    background-image: url(img/io.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article {
+    width: 75%;
+    margin-left: 25%;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+.aboutsection {
+    margin: 5% 0 25% 30px;
+}
+
+p {
+    width: 80%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.arrow {
+    width: 20px;
+    margin-left: 75%;
+}
+
+.infodata {
+    margin: 0;
+}
+
+.title {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.programicon {
+    width: 100px;
+}
+
+.flag {
+    margin-top: 10px;
+}
+
+.allskills {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.family {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+
+/********************************** WORK *********************************/
+
+.navwrapper {
+    position: fixed;
+    left: 30px;
+    top: 0px;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.portabarrette {
+    height: 30px;
+    margin: 20px 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.barrette {
+    width: 10px;
+    height: 4px;
+    margin: 5px 5px;
+    background-color: lightgray;
+    transition: width 2s ease .1s;
+}
+
+.short {
+    font-size: 13px;
+}
+
+.portabarrette:hover .barrette {
+    width: 33px;
+    transition: width 1s ease .1s;
+}
+
+.portabarrette:hover .short {
+    color: #EF7E64;
+    transition: color .1s ease ;
+}
+
+.work {
+    width: 80%;
+    margin-top: 250px;
+    margin-left: 20%;
+    margin-bottom: 17%;
+}
+
+.projectsection {
+    width: 100%;
+    /*margin: 2% 0 20% 0;*/
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectinfo {
+    width: 270px;
+    padding-left: 20px;
+    margin-right: 25px;
+    border-left: 1px solid lightgrey;
+}
+
+.infodata {
+    margin: 0;
+}
+
+.special {
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #62B4C6;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.see {
+    visibility: hidden;
+    color: #EF7E64;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+#atminfo {
+    height: 100px;
+}
+
+#atm {
+    width: 584px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(img/atm/atm-sprite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.atmsection:hover #atm {
+    animation-name: hoverAtm;
+    animation-duration: 4s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+}
+
+@keyframes hoverAtm {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -1200px;
+    }
+}
+
+.atmsection:hover .special {
+    color: #EF7E64;
+}
+
+.atmsection:hover .see {
+    visibility: visible;
+}
+
+#samsunginfo {
+    height: 170px;
+}
+
+#samsung {
+    width: 547px;
+    height: 375px;
+    margin-right: 40px;
+    overflow: hidden;
+    background-image: url(img/samsung/sams-sprite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40px top;
+}
+
+.samsungsection:hover #samsung {
+    animation-name: hoverSams;
+    animation-duration: 6s;
+    animation-timing-function: steps(6);
+    animation-iteration-count: infinite;
+}
+
+@keyframes hoverSams {
+    0% {
+        background-position: 40px 0;
+    }
+    100% {
+        background-position: 40px -2250px;
+    }
+}
+
+.samsungsection:hover .special {
+    color: #EF7E64;
+}
+
+.samsungsection:hover .see {
+    visibility: visible;
+}
+
+#tokyoinfo {
+    height: 170px;
+}
+
+#tokyo {
+    width: 292px;
+    height: 401px;
+    margin-left: 170px;
+    margin-right: 130px;
+    background-image: url(img/typography/tokyo-sprite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px top;
+}
+
+.tokyosection:hover #tokyo {
+    animation-name: hoverTokyo;
+    animation-duration: 6s;
+    animation-timing-function: steps(6);
+    animation-iteration-count: infinite;
+}
+
+@keyframes hoverTokyo {
+    0% {
+        background-position: 0px 0;
+    }
+    100% {
+        background-position: 0px -2406px;
+    }
+}
 
 .tokyosection:hover .special {
     color: #EF7E64;
@@ -580,9 +587,11 @@
 .tokyosection:hover .see {
     visibility: visible;
 }
+
 #mutandaeinfo {
     height: 170px;
 }
+
 #mutandae {
     width: 584px;
     height: 300px;
@@ -592,30 +601,35 @@
     background-size: cover;
     background-position: top;
 }
+
 .mutandaesection:hover #mutandae {
     animation-name: hoverMutandae;
     animation-duration: 2s;
     animation-timing-function: steps(2);
     animation-iteration-count: infinite;
 }
+
 @keyframes hoverMutandae {
     0% {
         background-position: 0 0;
     }
-    
     100% {
         background-position: 0 -600px;
     }
 }
+
 .mutandaesection:hover .special {
     color: #EF7E64;
 }
+
 .mutandaesection:hover .see {
     visibility: visible;
 }
+
 #spinfo {
     height: 170px;
 }
+
 #sp {
     width: 461px;
     height: 250px;
@@ -627,30 +641,33 @@
     background-size: cover;
     background-position: top;
 }
+
 .spsection:hover #sp {
     animation-name: hoverSp;
     animation-duration: 6s;
     animation-timing-function: steps(6);
     animation-iteration-count: infinite;
 }
+
 @keyframes hoverSp {
     0% {
         background-position: 0 0;
     }
-    
     100% {
         background-position: 0 -1500px;
     }
 }
+
 .spsection:hover .special {
     color: #EF7E64;
 }
+
 .spsection:hover .see {
     visibility: visible;
 }
 
-/********************************** PROJECT *********************************/
 
+/********************************** PROJECT *********************************/
 
 .projectback {
     position: fixed;
@@ -661,104 +678,110 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-end;
-    
     z-index: 2;
 }
+
 .projectlogo {
     width: 100%;
     height: 60px;
     margin-bottom: 50%;
 }
+
 .projectdata {
     margin-left: 30px;
     margin-bottom: 55px;
 }
+
 .white {
     color: white;
 }
+
 .tools {
     width: 100%;
     height: 40px;
     margin: -10px;
 }
+
 .explanation {
     margin-left: 30px;
 }
+
 .img {
     margin-left: 30px;
     width: 80%;
 }
 
-.footer{
+.footer {
     width: 80%;
-    
     margin-top: 20px;
     margin-left: 30px;
-    
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-.prev{
+.prev {
     font-family: 'Source Sans Pro', sans-serif;
     width: 55px;
     font-size: 16px;
     text-align: right;
-    
     background-image: url(img/back.png);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: contain;   
+    background-size: contain;
 }
 
-.prev:hover{
-    color: #EF7E64;  
+.prev:hover {
+    color: #EF7E64;
 }
 
-.next{
+.next {
     font-family: 'Source Sans Pro', sans-serif;
     width: 55px;
     font-size: 16px;
     text-align: left;
-    
     background-image: url(img/forward.png);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: contain;   
+    background-size: contain;
 }
 
-.next:hover{
-    color: #EF7E64;  
+.next:hover {
+    color: #EF7E64;
 }
 
-.first{
+.first {
     visibility: hidden;
 }
 
-.last{
+.last {
     visibility: hidden;
 }
+
 
 /************* ATM ***************/
+
 .atm {
     background-image: url(img/atm/background.jpg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .atm-logo {
     background-image: url(img/atm/atm-logo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .atm-tools {
     background-image: url(img/atm/atm-tools.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .atm-personas {
     height: 300px;
     background-image: url(img/atm/personas.jpg);
@@ -766,6 +789,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .atm-task {
     height: 350px;
     margin: 40px 30px;
@@ -774,6 +798,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .atm-zones {
     height: 700px;
     margin: -150px 30px;
@@ -782,16 +807,20 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .atm-video {
     width: 80%;
     margin: 0 5%;
     padding-bottom: 50px;
 }
 
+
 /************* SAMSUNG ***************/
+
 .sams {
     background-color: #343434;
 }
+
 .sams-logo {
     height: 115px;
     margin-bottom: 40%;
@@ -800,12 +829,14 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .sams-tools {
     background-image: url(img/samsung/sams-tools.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .sams-graphics {
     height: 200px;
     background-image: url(img/samsung/sams-graphics.jpg);
@@ -813,6 +844,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .sams-families {
     height: 500px;
     margin-top: -20px;
@@ -821,6 +853,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .sams-pl {
     height: 300px;
     margin: 80px 0;
@@ -829,6 +862,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .sams-reward {
     height: 500px;
     margin-top: -20px;
@@ -837,6 +871,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .sams-game {
     height: 500px;
     margin-top: -20px;
@@ -845,6 +880,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .sams-touchpoints {
     height: 70px;
     margin: 50px;
@@ -854,7 +890,9 @@
     background-size: contain;
 }
 
+
 /************* TOKYO ***************/
+
 .tok {
     background-color: black;
 }
@@ -867,12 +905,14 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .tokyo-tools {
     background-image: url(img/typography/tokyo-tools.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .tokyo-try {
     height: 160px;
     background-image: url(img/typography/tokyo-tries-03.jpg);
@@ -880,6 +920,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .tokyo-final {
     height: 171px;
     margin-top: 40px;
@@ -889,61 +930,48 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .tokyo-cover {
     height: 560px;
-    
     margin-top: 20px;
     margin-bottom: 60px;
-    
     background-image: url(img/typography/cover-sito.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.tokyo-article{
+.tokyo-article {
     width: 438px;
-     height: 601px;
-    
-    margin:30px 22%;
-     
-     background-image: url(img/typography/tokyo-article.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: top;
-    
-     animation-name: Tokyo;
-     animation-duration: 8s;
-     animation-timing-function: steps(4);
-     animation-iteration-count: infinite;
- }
- 
- @keyframes Tokyo {
-     0% {
-         background-position: 0px 0;
-     }
-     100% {
-         background-position: 0px -2404px;
-     }
- }
+    height: 601px;
+    margin: 30px 22%;
+    background-image: url(img/typography/tokyo-article.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
 
 
 /************* mutandae ***************/
+
 .mut {
     background-color: #B99887;
 }
+
 .mut-logo {
     background-image: url(img/mutandae/mutandae-logo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .mut-tools {
     background-image: url(img/mutandae/mut-tools.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .mut-home {
     height: 1200px;
     margin-top: 30px;
@@ -953,35 +981,20 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .mut-interview {
-    width:800px;
+    width: 800px;
     height: 500px;
-    
-    margin-left:4%;
-    
-    background-image: url(img/mutandae/mut-interview.png) ;
+    margin-left: 4%;
+    background-image: url(img/mutandae/mut-interview.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    
-     animation-name: Mut;
-     animation-duration: 4s;
-     animation-timing-function: steps(2);
-     animation-iteration-count: infinite;
- }
- 
- @keyframes Mut {
-     0% {
-         background-position: 0px 0;
-     }
-     100% {
-         background-position: 0px -1000px;
-     }
- }  
-
+}
 
 
 /************* SYMPHONIAM PARK ***************/
+
 .sp {
     background-image: url(img/sp/sp-back1.jpg);
     background-position: left;
@@ -989,8 +1002,9 @@
     background-size: cover;
 }
 
-.project-subtitle{
-    line-height: 0;;
+.project-subtitle {
+    line-height: 0;
+    ;
 }
 
 .sp-tools {
@@ -999,16 +1013,18 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .sp-map {
     height: 500px;
-    margin-top:20px;
-    margin-bottom:40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     background-image: url(img/sp/sp-map.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-.sp-gesture{
+
+.sp-gesture {
     height: 300px;
     margin-top: 20px;
     background-image: url(img/sp/plant-horizontal.png);
@@ -1017,47 +1033,40 @@
     background-size: contain;
 }
 
+
 /*********************************** MEDIA (iPad) **********************************/
+
 @media (max-width: 1115px) {
     /********************************** HOME *********************************/
-    
     nav ul li a:hover {
         text-decoration: none;
         color: #565656;
     }
-    
     .intro:hover .logo-container {
         background-color: #62B4C6;
     }
-    
     .intro:hover .subtitle {
         visibility: hidden;
     }
     /********************************** CONTACT *********************************/
-    
     .mail:hover a {
         color: #62B4C6;
     }
-    
     .cv:hover a {
         color: #62B4C6;
     }
-    
     .me:hover .logo-container {
         background-color: #62B4C6;
     }
-    
     .contacts {
         bottom: 5%;
     }
-    
     .mail:hover {
         background-image: url(img/busta.png);
         background-repeat: no-repeat;
         background-position: left;
         background-size: contain;
     }
-    
     .cv:hover {
         background-image: url(img/graffetta.png);
         background-repeat: no-repeat;
@@ -1065,42 +1074,34 @@
         background-size: contain;
     }
     /********************************** ABOUT *********************************/
-    
     .picofme {
         width: 33%;
         background-position: -5px;
     }
-    
     .backhead {
         width: 100%;
         height: 80px;
         z-index: 2;
     }
-    
     article {
         width: 67%;
         margin-left: 33%;
         margin-top: 250px;
     }
-    
     .aboutsection {
         margin: 10% 0 10% 30px;
     }
-    
     p {
         width: 90%;
         font-family: 'Source Sans Pro', sans-serif;
     }
-    
     .arrow {
         width: 20px;
         margin-left: 90%;
     }
-    
     .programicon {
         width: 100px;
     }
-    
     .allskills {
         width: 400px;
         margin-top: 30px;
@@ -1109,350 +1110,261 @@
         justify-content: space-between;
     }
     /********************************** WORK *********************************/
-    
     .navwrapper {
         left: 30px;
         top: 0px;
         width: 20%;
     }
-    
     .barrette {
         width: 30px;
         height: 1px;
         margin: 5px 5px;
     }
-    
     .portabarrette:hover .barrette {
         width: 30px;
     }
-    
     .portabarrette:hover .short {
         color: #565656;
     }
-    
     .work {
         width: 80%;
         margin-left: 20%;
         margin-top: 250px;
         margin-bottom: 10%;
     }
-    
     .projectsection {
         width: 100%;
         /*margin: 20px 0;*/
         justify-content: space-around;
     }
-    
     .projectinfo {
         width: 150px;
         margin-right: 15px;
     }
-    
     .special {
         font-weight: 500;
         letter-spacing: 1px;
         color: #62B4C6;
     }
-    
     .see {
         display: none;
     }
-    
     #atm {
         width: 420px;
         height: 200px;
     }
-    
     .atmsection:hover #atm {
         animation-play-state: paused;
     }
-    
     .atmsection:hover .special {
         color: #62B4C6;
     }
-    
     #samsung {
         width: 380px;
         height: 260px;
     }
-    
     .samsungsection:hover #samsung {
         animation-play-state: paused;
     }
-    
     .samsungsection:hover .special {
         color: #62B4C6;
     }
-    
     #tokyo {
         width: 285px;
         height: 390px;
         margin-left: 90px;
         margin-right: 50px;
     }
-    
     .tokyosection:hover #tokyo {
         animation-play-state: paused;
     }
-    
     .tokyosection:hover .special {
         color: #62B4C6;
     }
-    
     #mutandae {
         width: 420px;
         height: 200px;
     }
-    
     .mutandaesection:hover #mutandae {
         animation-play-state: paused;
     }
-    
     .mutandaesection:hover .special {
         color: #62B4C6;
     }
-    
     #sp {
         width: 395px;
         height: 210px;
         margin: 0;
     }
-    
     .spsection:hover #sp {
         animation-play-state: paused;
     }
-    
     .spsection:hover .special {
         color: #62B4C6;
     }
     /********************************** PROJECT *********************************/
-    
     .projectback {
         width: 33%;
     }
-    
     .projectlogo {
         width: 90%;
         height: 80px;
         margin-bottom: 40%;
     }
-    
     .projectdata {
         margin-left: 30px;
         margin-bottom: 55px;
     }
-    
     .tools {
         width: 70%;
         height: 40px;
         margin: -10px;
     }
-    
     .explanation {
         margin-left: 30px;
     }
-    
     .img {
         margin-left: 30px;
         width: 90%;
     }
-    
-    .footer{
+    .footer {
         width: 90%;
     }
-    
-.prev{
-    width: 50px;
-    font-size: 14px;;
-}
-    
-    .prev:hover{
-    color: #3f3f3f ;
-}
-
-    .next{
-    width: 50px;
-    font-size: 14px;
-}
-    
-.next:hover{
-    color: #3f3f3f ; 
-}
+    .prev {
+        width: 50px;
+        font-size: 14px;
+        ;
+    }
+    .prev:hover {
+        color: #3f3f3f;
+    }
+    .next {
+        width: 50px;
+        font-size: 14px;
+    }
+    .next:hover {
+        color: #3f3f3f;
+    }
     /************* ATM ***************/
-    
     .atm-personas {
         height: 200px;
     }
-    
     .atm-task {
         height: 300px;
         margin: 0 30px;
     }
-    
     .atm-zones {
         height: 500px;
         margin: -80px 30px;
     }
-    
     .atm-video {
         width: 90%;
         margin: 0 5%;
         padding: 0;
     }
     /************* SAMSUNG ***************/
-    
     .sams-logo {
         height: 100px;
     }
-    
     .sams-graphics {
         height: 150px;
     }
-    
     .sams-families {
         height: 400px;
         margin-top: 0px;
     }
-    
     .sams-pl {
         height: 300px;
         margin: 50px 10px;
     }
-    
     .sams-game {
         height: 400px;
         margin-top: 0px;
     }
-    
     .sams-reward {
         height: 400px;
         margin-top: 0px;
     }
-    
     .sams-touchpoints {
         height: 50px;
         margin: 20px;
     }
-    
     /************* TOKYO ***************/
-       
-.tokyo-logo {
-    height: 200px;
-    margin-left: 10px;
-    margin-bottom: 15%;
-}
-
-.tokyo-try {
-    height: 120px;
-}
+    .tokyo-logo {
+        height: 200px;
+        margin-left: 10px;
+        margin-bottom: 15%;
+    }
+    .tokyo-try {
+        height: 120px;
+    }
+    .tokyo-final {
+        height: 120px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    .tokyo-cover {
+        height: 440px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .tokyo-article {
+        width: 292px;
+        height: 401px;
+        margin: 30px 25%;
+    }
     
-.tokyo-final {
-    height: 120px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-}
-    
-.tokyo-cover {
-    height: 440px;
-    
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-    
-.tokyo-article{
-    width: 292px;
-     height: 401px;
-    
-    margin:30px 25%;
-    
-     animation-name: Tokyo;
-     animation-duration: 4s;
-     animation-timing-function: steps(4);
-     animation-iteration-count: infinite;
- }
- 
- @keyframes Tokyo {
-     0% {
-         background-position: 0px 0;
-     }
-     100% {
-         background-position: 0px -1604px;
-     }
- }
-    
-    
-/************* mutandae ***************/
-
-.mut-logo {
-    margin-left: 3%;
-}
-
-.mut-home {
-    height: 900px;
-    margin-top: 0px;
-    margin-bottom: 30px;   
-}
-.mut-interview {
-    width:500px;
-    height: 312px;
-    
-    margin: 0 auto;
- }
- 
- @keyframes Mut {
-     0% {
-         background-position: 0px 0;
-     }
-     100% {
-         background-position: 0px -624px;
-     }
- }
+    /************* mutandae ***************/
+    .mut-logo {
+        margin-left: 3%;
+    }
+    .mut-home {
+        height: 900px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .mut-interview {
+        width: 500px;
+        height: 312px;
+        margin: 0 auto;
+    }
     
     /************* SYMPHONIAM PARK ***************/
-.sp-map {
-    height: 340px;
-    margin-top:0px;
-    margin-bottom:0px;
+    .sp-map {
+        height: 340px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .sp-gesture {
+        height: 1000px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-image: url(img/sp/plant.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
-    
-.sp-gesture{
-    height: 1000px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-image: url(img/sp/plant.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-  
-    
-}
-
-
 
 /********************************** MEDIA (mobile landscape) *********************************/
+
 @media (max-width: 736px) {
     .backhead {
         height: 90px;
     }
     /********************************** HOME *********************************/
-    
     header {
         width: 100%;
         justify-content: center;
-        
         transition: transform .4s ease-out;
     }
-    
     .nav-home {
         margin: 15px auto;
     }
-    
     nav ul li {
         width: 95px;
         font-size: 13px;
     }
-    
     .intro {
         width: 300px;
         margin: 0 auto;
@@ -1462,32 +1374,26 @@
         justify-content: center;
         align-items: center;
     }
-    
     .logo-container {
         width: 90px;
         height: 90px;
     }
-    
     .logo {
         width: 90px;
         height: 90px;
     }
-    
     .home-title {
         margin-top: 0px;
     }
-    
     h2 {
         font-size: 16px;
     }
-    
     .changing {
         margin-top: -30px;
         padding-left: 90px;
         font-size: 16px;
     }
     /********************************** CONTACT *********************************/
-    
     header {
         width: 100%;
         display: flex;
@@ -1495,34 +1401,27 @@
         justify-content: space-between;
         z-index: 2;
     }
-    
     nav {
         margin: 25px 20px 0 0;
     }
-    
     .logo-container.top {
         margin: 25px 20px;
     }
-    
     .myname {
-     margin-left: 0px;
- }
-    
+        margin-left: 0px;
+    }
     .contactnav {
         font-weight: 300;
         color: #EF7E64;
     }
-    
     .contacts {
         position: absolute;
         bottom: 7%;
     }
-    
     h1 {
         margin: 20px 20px;
         font-size: 16px;
     }
-    
     .mail {
         width: 200px;
         margin: 20px 20px;
@@ -1530,7 +1429,6 @@
         font-size: 14px;
         line-height: normal;
     }
-    
     .cv {
         width: 200px;
         margin: 20px 20px;
@@ -1539,125 +1437,99 @@
         line-height: normal;
     }
     /********************************** ABOUT *********************************/
-    
-    .small-me{
-    width: 95%;
-    height: 100px;
-        
-    background-image: url(img/small-io.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-    display:inline-block;
-}
-    
-    p{
+    .small-me {
+        width: 95%;
+        height: 100px;
+        background-image: url(img/small-io.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+    p {
         width: 95%;
     }
-    
     .picofme {
         display: none;
     }
-    
     article {
         width: 100%;
         margin-left: 0px;
         margin-top: 140px;
     }
-    
     .aboutsection {
         margin: 5% 0 5% 20px;
     }
-    
     .title {
         margin-top: 20px;
         margin-bottom: 0;
     }
-    
     .arrow {
         width: 15px;
     }
     /********************************** WORK *********************************/
-    
     .navwrapper {
         display: none;
     }
-    
     .work {
         width: 100%;
         margin-top: 140px;
         margin-left: 0px;
         margin-bottom: 5%;
     }
-    
     .projectsection {
         width: 100%;
         margin: 10px 0 70px 0;
         flex-flow: row;
         justify-content: center;
     }
-    
     .projectinfo {
         width: 30%;
         margin: 0;
         border-left: none;
     }
-    
     #atminfo {
         height: 0px;
     }
-    
     #samsunginfo {
         height: 0px;
     }
-    
     #samsung {
         width: 380px;
         height: 240px;
     }
-    
     #tokyoinfo {
         height: 0px;
     }
-    
     #tokyo {
         width: 250px;
         height: 330px;
     }
-    
     #mutandaeinfo {
         height: 0px;
     }
-    
     #spinfo {
         height: 0px;
     }
-    
     #sp {
         width: 395px;
         height: 210px;
     }
     /********************************** PROJECT *********************************/
-    
-    .nav-white{
+    .nav-white {
         color: white;
     }
-    
     .nav-white:hover {
         color: white;
     }
-    
-    .border{
-        border-left:1px solid white;
-        border-right:1px solid white;
+    .border {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
     }
-    
-    .backhead{
-    height:100px;
-        
+    .backhead {
+        height: 100px;
         transition: transform .4s ease-out;
-}
+    }
     .projectback {
         position: relative;
         left: 0;
@@ -1665,281 +1537,208 @@
         width: 100vw;
         height: 100vh;
     }
-    
     .projectlogo {
         width: 100%;
         height: 60px;
         margin: 2% auto;
     }
-    
     .projectdata {
         margin-left: 20px;
         margin-bottom: 15px;
     }
-    
     .white {
         line-height: .7;
     }
-    
     .tools {
         width: 20%;
         height: 40px;
         margin: -3px;
         margin-top: -10px;
     }
-    
     .explanation {
         width: 95%;
         margin-left: 20px;
     }
-    
     .img {
         margin-left: 0px;
         width: 95%;
     }
-    
     .article {
         margin-top: 80px;
     }
-    
-    .footer{
-    width: 90%;
-    margin-left: 20px;
+    .footer {
+        width: 90%;
+        margin-left: 20px;
     }
-
-    .prev{
-    width: 45px;
-    font-size: 13px;  
+    .prev {
+        width: 45px;
+        font-size: 13px;
     }
-
-    .next{
-    width: 45px;
-    font-size: 13px;   
+    .next {
+        width: 45px;
+        font-size: 13px;
     }
-    
-    .gone{
-  transform: translateY(-170px);
-  transition: transform .8s ease-out;
-}
-    
-    
-
+    .gone {
+        transform: translateY(-170px);
+        transition: transform .8s ease-out;
+    }
     /************* ATM ***************/
-    
-    
-    .foratm{
+    .foratm {
         background-color: #CF8230;
     }
-    
-    
     .atm {
         background-image: url(img/atm/background2.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
-    
     .atm-personas {
         height: 230px;
     }
-    
     .atm-task {
         height: 350px;
         margin: 20px 20px;
     }
-    
     .atm-zones {
         height: 400px;
         margin: -10px 30px;
     }
-    
     .atmvideo {
         width: 80%;
         margin-left: 10%;
         padding-bottom: 50px;
     }
     /************* SAMSUNG ***************/
-    
     .forsams {
-    background-color: #343434;
-    
-}
-    
+        background-color: #343434;
+    }
     .nav-white:hover {
         color: white;
     }
-    
     .sams-logo {
         height: 90px;
         margin-bottom: 0;
     }
-    
     .sams-graphics {
         height: 150px;
     }
-    
     .sams-families {
         height: 400px;
         margin-top: 0px;
     }
-    
     .sams-pl {
         height: 300px;
         margin: 50px 10px;
     }
-    
     .sams-game {
         height: 400px;
         margin-top: 0px;
     }
-    
     .sams-reward {
         height: 400px;
         margin-top: 0px;
     }
-    
     .sams-touchpoints {
         height: 50px;
         margin: 20px;
     }
+    /************* TOKYO ***************/
+    .fortok {
+        background-color: black;
+    }
+    .tokyo-logo {
+        height: 100px;
+        margin-left: 0px;
+        margin-bottom: 0;
+    }
+    .tokyo-try {
+        height: 120px;
+    }
+    .tokyo-final {
+        height: 120px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    .tokyo-cover {
+        height: 330px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .tokyo-article {
+        width: 292px;
+        height: 401px;
+        margin: 30px 25%;
+    }
     
-     /************* TOKYO ***************/
-  .fortok {
-    background-color: black;
-}
+    /************* mutandae ***************/
+    .formut {
+        background-color: #B99887;
+    }
+    .mut-home {
+        height: 900px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .mut-interview {
+        width: 500px;
+        height: 312px;
+        margin: 0 auto;
+    }
     
-.tokyo-logo {
-    height: 100px;
-    margin-left:0px;
-    margin-bottom:0;
-}   
-    
-.tokyo-try {
-    height: 120px;
-}
-    
-.tokyo-final {
-    height: 120px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-}
-    
-.tokyo-cover {
-    height: 330px;
-    
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-    
-.tokyo-article{
-    width: 292px;
-     height: 401px;
-    
-    margin:30px 25%;
-    
-     animation-name: Tokyo;
-     animation-duration: 4s;
-     animation-timing-function: steps(4);
-     animation-iteration-count: infinite;
- }
- 
- @keyframes Tokyo {
-     0% {
-         background-position: 0px 0;
-     }
-     100% {
-         background-position: 0px -1604px;
-     }
- }
-    
-    
-/************* mutandae ***************/
-.formut {
-    background-color: #B99887;
-}
-
-.mut-home {
-    height: 900px;
-    margin-top: 0px;
-    margin-bottom: 30px;   
-}
-.mut-interview {
-    width:500px;
-    height: 312px;
-    
-    margin: 0 auto;
- }
- 
- @keyframes Mut {
-     0% {
-         background-position: 0px 0;
-     }
-     100% {
-         background-position: 0px -624px;
-     }
- }
-    
-        /************* SYMPHONIAM PARK ***************/
-    .forsp{
+    /************* SYMPHONIAM PARK ***************/
+    .forsp {
         background-color: #9b978f;
-    }   
+    }
     .sp {
-    background-image: url(img/sp/sp-back.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+        background-image: url(img/sp/sp-back.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sp-map {
+        height: 380px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .sp-gesture {
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+        background-image: url(img/sp/plant-horizontal.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     
-.sp-map {
-    height: 380px;
-    margin-top:0px;
-    margin-bottom:0px;
-}
-    
-.sp-gesture{
-    width: 100%;
-    height: 200px;
-    margin-top: 20px;
-    background-image: url(img/sp/plant-horizontal.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-}
 
 /********************************** MEDIA (mobile portrait) *********************************/
+
 @media (max-width: 540px) {
     .backhead {
         height: 75px;
     }
     /********************************** HOME *********************************/
-    
     nav {
         margin: 15px auto;
     }
-    
     nav ul li {
         width: 95px;
         font-size: 13px;
     }
-    
     .intro {
         width: 300px;
         margin-top: 70%;
         margin-left: auto;
     }
     /******************************* CONTACT *********************************/
-    
     .myname {
         display: none;
     }
-    
     .contacts {
         bottom: 30px;
     }
-    
     .avatar {
         position: fixed;
         bottom: -25px;
@@ -1948,73 +1747,59 @@
         overflow: hidden;
         opacity: 0.4;
     }
-    
     .logo-container.top {
         width: 40px;
         height: 40px;
         margin: 20px 0 0 20px;
     }
-    
     .logo.top {
         width: 40px;
         height: 40px;
     }
     /********************************** ABOUT *********************************/
-    
-    .small-me{
-    width: 95%;
-    height: 100px;
-}
-    
+    .small-me {
+        width: 95%;
+        height: 100px;
+    }
     article {
         margin-top: 180px;
     }
-    
     .aboutsection {
         margin: 70px 0 30px 20px;
     }
-    
     p {
         font-size: 1em;
     }
-    
     .arrow {
         margin-top: 0;
         margin-left: 90%;
     }
-    
     .allskills {
         width: 300px;
     }
-    
     .programicon {
         width: 75px;
     }
     /********************************** WORK *********************************/
-    
     .work {
         margin-top: 180px;
     }
-    
     .projectsection {
         margin: 30px 0 80px 0;
         flex-flow: column;
         justify-content: center;
         align-items: center;
     }
-    
     .projectinfo {
         width: 90%;
         align-self: flex-start;
     }
-    
     #atm {
         width: 375px;
         height: 200px;
         margin-top: 20px;
         order: 1;
     }
-    
     #samsung {
         width: 375px;
         height: 250px;
@@ -2022,7 +1807,6 @@
         margin-top: 20px;
         order: 1;
     }
-    
     #tokyo {
         width: 230px;
         height: 300px;
@@ -2030,14 +1814,12 @@
         margin-top: 20px;
         order: 1;
     }
-    
     #mutandae {
         width: 375px;
         height: 200px;
         margin-top: 20px;
         order: 1;
     }
-    
     #sp {
         width: 375px;
         height: 190px;
@@ -2045,7 +1827,6 @@
         order: 1;
     }
     /********************************** PROJECT *********************************/
-    
     .projectback {
         position: relative;
         left: 0;
@@ -2053,89 +1834,71 @@
         width: 100vw;
         height: 100vh;
     }
-    
     .atm {
         background-image: url(img/atm/background.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
     .projectlogo {
         width: 100%;
         height: 60px;
         margin: 30% auto;
     }
-    
     .projectdata {
         margin-left: 20px;
         margin-bottom: 80px;
     }
-    
     .white {
         line-height: .5;
     }
-    
     .tools {
         width: 40%;
         margin-top: -10px;
         margin-left: 5px
     }
-    
     .explanation {
         width: 91%;
         margin-left: 20px;
     }
-    
     .img {
         margin-left: 0px;
         width: 95%;
     }
-    
-        .footer{
-    width: 90%;
-    margin-left: 20px;
-}
-    
+    .footer {
+        width: 90%;
+        margin-left: 20px;
+    }
     /************* ATM ***************/
-    .foratm{
+    .foratm {
         background-color: #D58936;
     }
-    
     .atm-personas {
-    
-        
         height: 150px;
         margin: 0;
-        
-    background-image: url(img/atm/personas-mob.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+        background-image: url(img/atm/personas-mob.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
-    
     .atm-task {
         height: 200px;
         margin: 0 10px;
     }
-    
     .atm-zones {
         height: 400px;
         margin: -80px 0;
     }
-    
     .atmvideo {
         width: 90%;
         margin-left: 5%;
         padding-bottom: 50px;
     }
     /************* SAMSUNG ***************/
-    
     .sams-logo {
         height: 80px;
         margin: 20% auto;
     }
-    
     .sams-graphics {
         height: 90px;
         background-image: url(img/samsung/sams-graphics2.png);
@@ -2143,131 +1906,90 @@
         background-repeat: no-repeat;
         background-size: contain;
     }
-    
     .sams-families {
         height: 400px;
         margin-top: -20px;
         overflow: hidden;
     }
-    
     .sams-pl {
         height: 250px;
         margin: 40px 5px;
     }
-    
     .sams-game {
         height: 400px;
         margin-top: -20px;
     }
-    
     .sams-reward {
         height: 400px;
         margin-top: -20px;
     }
-    
     .sams-touchpoints {
         width: 90%;
         height: 60px;
         margin: auto;
     }
-    
-        
-     /************* TOKYO ***************/
-    
-.tokyo-logo {
-    height: 120px;
-    margin:15% auto;
-}
-
-.tokyo-try {
-    height: 120px;
-    margin:0 auto;
-}
-    
-.tokyo-final {
-    height: 120px;
-    margin:40px auto;
-    
-}
-    
-.tokyo-cover {
-    height: 420px;
-    
-   margin:40px auto;
-}
-    
-.tokyo-article{
-    width: 292px;
-     height: 401px;
-    
-    margin:30px auto;
-    
-     animation-name: Tokyo;
-     animation-duration: 4s;
-     animation-timing-function: steps(4);
-     animation-iteration-count: infinite;
- }
- 
- @keyframes Tokyo {
-     0% {
-         background-position: 0px 0;
-     }
-     100% {
-         background-position: 0px -1604px;
-     }
- 
+    /************* TOKYO ***************/
+    .tokyo-logo {
+        height: 120px;
+        margin: 15% auto;
     }
-     /************* mutandae ***************/
-.mut-home {
-    height: 690px;
-    margin: 0 auto;
-    margin-bottom: 30px;   
-}
-.mut-interview {
-    width:320px;
-    height: 200px;
-    
-    margin: 0 auto;
- }
- 
- @keyframes Mut {
-     0% {
-         background-position: 0px 0;
-     }
-     100% {
-         background-position: 0px -400px;
-     }
+    .tokyo-try {
+        height: 120px;
+        margin: 0 auto;
+    }
+    .tokyo-final {
+        height: 120px;
+        margin: 40px auto;
+    }
+    .tokyo-cover {
+        height: 420px;
+        margin: 40px auto;
+    }
+    .tokyo-article {
+        width: 292px;
+        height: 401px;
+        margin: 30px auto;
     }
     
-            /************* SYMPHONIAM PARK ***************/
-.sp-map {
-    height: 260px;
-    margin:0 auto;
+    /************* mutandae ***************/
+    .mut-home {
+        height: 690px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .mut-interview {
+        width: 320px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    
+    /************* SYMPHONIAM PARK ***************/
+    .sp-map {
+        height: 260px;
+        margin: 0 auto;
+    }
+    .sp-gesture {
+        height: 1000px;
+        margin: 0 auto;
+        background-image: url(img/sp/plant.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
-.sp-gesture{
-    height: 1000px;
-    margin: 0 auto;
-    background-image: url(img/sp/plant.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-}
 
 /********************************** MEDIA (iphone5) *********************************/
+
 @media (max-width: 370px) {
-    
     nav ul li {
         width: 75px;
     }
-   
-     /********************************** WORK *********************************/
-    
+    /********************************** WORK *********************************/
     #atm {
         width: 320px;
         height: 150px;
-        margin-left:-20px;
+        margin-left: -20px;
         margin-top: 20px;
         order: 1;
     }
@@ -2279,7 +2001,6 @@
         margin-top: 20px;
         order: 1;
     }
-    
     #tokyo {
         width: 230px;
         height: 300px;
@@ -2287,14 +2008,12 @@
         margin-top: 20px;
         order: 1;
     }
-    
     #mutandae {
         width: 320px;
         height: 150px;
         margin-top: 20px;
         order: 1;
     }
-    
     #sp {
         width: 320px;
         height: 170px;
