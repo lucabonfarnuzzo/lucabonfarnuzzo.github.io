@@ -791,7 +791,7 @@ h3 {
 }
 
 .atm-task {
-    height: 350px;
+    height: 400px;
     margin: 40px 30px;
     background-image: url(img/atm/task-flow.jpg);
     background-position: center;
@@ -801,7 +801,7 @@ h3 {
 
 .atm-zones {
     height: 700px;
-    margin: -150px 30px;
+    margin: -100px 30px;
     background-image: url(img/atm/atm-zones.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -944,7 +944,7 @@ h3 {
 .tokyo-article {
     width: 438px;
     height: 601px;
-    margin: 30px 22%;
+    margin: 30px 24%;
     background-image: url(img/typography/tokyo-article.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -985,7 +985,7 @@ h3 {
 .mut-interview {
     width: 800px;
     height: 500px;
-    margin-left: 4%;
+
     background-image: url(img/mutandae/mut-interview.png);
     background-position: top;
     background-repeat: no-repeat;
