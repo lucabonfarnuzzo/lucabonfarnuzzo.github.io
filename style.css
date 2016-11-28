@@ -791,7 +791,7 @@ h3 {
 }
 
 .atm-task {
-    height: 400px;
+    height: 350px;
     margin: 40px 30px;
     background-image: url(img/atm/task-flow.jpg);
     background-position: center;
@@ -801,7 +801,7 @@ h3 {
 
 .atm-zones {
     height: 700px;
-    margin: -100px 30px;
+    margin: -150px 30px;
     background-image: url(img/atm/atm-zones.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -944,11 +944,24 @@ h3 {
 .tokyo-article {
     width: 438px;
     height: 601px;
-    margin: 30px 24%;
+    margin: 30px 22%;
     background-image: url(img/typography/tokyo-article.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    animation-name: Tokyo;
+    animation-duration: 8s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+}
+
+@keyframes Tokyo {
+    0% {
+        background-position: 0px 0;
+    }
+    100% {
+        background-position: 0px -2404px;
+    }
 }
 
 
@@ -985,11 +998,24 @@ h3 {
 .mut-interview {
     width: 800px;
     height: 500px;
-
+    margin-left: 4%;
     background-image: url(img/mutandae/mut-interview.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: Mut;
+    animation-duration: 4s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes Mut {
+    0% {
+        background-position: 0px 0;
+    }
+    100% {
+        background-position: 0px -1000px;
+    }
 }
 
 
@@ -1312,6 +1338,18 @@ h3 {
         width: 292px;
         height: 401px;
         margin: 30px 25%;
+        animation-name: Tokyo;
+        animation-duration: 4s;
+        animation-timing-function: steps(4);
+        animation-iteration-count: infinite;
+    }
+    @keyframes Tokyo {
+        0% {
+            background-position: 0px 0;
+        }
+        100% {
+            background-position: 0px -1604px;
+        }
     }
     
     /************* mutandae ***************/
@@ -1328,7 +1366,14 @@ h3 {
         height: 312px;
         margin: 0 auto;
     }
-    
+    @keyframes Mut {
+        0% {
+            background-position: 0px 0;
+        }
+        100% {
+            background-position: 0px -624px;
+        }
+    }
     /************* SYMPHONIAM PARK ***************/
     .sp-map {
         height: 340px;
@@ -1668,6 +1713,18 @@ h3 {
         width: 292px;
         height: 401px;
         margin: 30px 25%;
+        animation-name: Tokyo;
+        animation-duration: 4s;
+        animation-timing-function: steps(4);
+        animation-iteration-count: infinite;
+    }
+    @keyframes Tokyo {
+        0% {
+            background-position: 0px 0;
+        }
+        100% {
+            background-position: 0px -1604px;
+        }
     }
     
     /************* mutandae ***************/
@@ -1684,7 +1741,14 @@ h3 {
         height: 312px;
         margin: 0 auto;
     }
-    
+    @keyframes Mut {
+        0% {
+            background-position: 0px 0;
+        }
+        100% {
+            background-position: 0px -624px;
+        }
+    }
     /************* SYMPHONIAM PARK ***************/
     .forsp {
         background-color: #9b978f;
@@ -1949,8 +2013,19 @@ h3 {
         width: 292px;
         height: 401px;
         margin: 30px auto;
+        animation-name: Tokyo;
+        animation-duration: 4s;
+        animation-timing-function: steps(4);
+        animation-iteration-count: infinite;
     }
-    
+    @keyframes Tokyo {
+        0% {
+            background-position: 0px 0;
+        }
+        100% {
+            background-position: 0px -1604px;
+        }
+    }
     /************* mutandae ***************/
     .mut-home {
         height: 690px;
@@ -1962,7 +2037,14 @@ h3 {
         height: 200px;
         margin: 0 auto;
     }
-    
+    @keyframes Mut {
+        0% {
+            background-position: 0px 0;
+        }
+        100% {
+            background-position: 0px -400px;
+        }
+    }
     /************* SYMPHONIAM PARK ***************/
     .sp-map {
         height: 260px;
