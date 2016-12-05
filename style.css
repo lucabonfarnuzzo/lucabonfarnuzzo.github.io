@@ -388,7 +388,7 @@ p {
 .navwrapper {
     position: fixed;
     left: 30px;
-    top: 0px;
+    top: 30px;
     width: 20%;
     height: 100vh;
     display: flex;
@@ -472,8 +472,127 @@ h3 {
     margin: 5px 0 0 0;
 }
 
-#atminfo {
+
+
+#bvinfo {
     height: 100px;
+}
+
+
+#bv {
+    width: 584px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(img/bottega-veneta/bv.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.bvsection:hover #bv {
+    animation-name: hoverBv;
+    animation-duration: 4s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+}
+
+@keyframes hoverBv {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -1200px;
+    }
+}
+
+.bvsection:hover .special {
+    color: #EF7E64;
+}
+
+.bvsection:hover .see {
+    visibility: visible;
+}
+
+#rbinfo {
+    height: 190px;
+}
+
+#rb {
+    width: 584px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(img/rayban/ray-sprite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.rbsection:hover #rb {
+    animation-name: hoverRb;
+    animation-duration: 5s;
+    animation-timing-function: steps(5);
+    animation-iteration-count: infinite;
+}
+
+@keyframes hoverRb {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -1500px;
+    }
+}
+
+.rbsection:hover .special {
+    color: #EF7E64;
+}
+
+.rbsection:hover .see {
+    visibility: visible;
+}
+
+#nikeinfo {
+    height: 190px;
+}
+
+#nike {
+    width: 461px;
+    height: 250px;
+    margin-left: 60px;
+    margin-right: 40px;
+    overflow: hidden;
+    background-image: url(img/nike/nike-sprite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.nikesection:hover #nike {
+    animation-name: hoverNike;
+    animation-duration: 6s;
+    animation-timing-function: steps(6);
+    animation-iteration-count: infinite;
+}
+
+@keyframes hoverNike {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -1500px;
+    }
+}
+
+.nikesection:hover .special {
+    color: #EF7E64;
+}
+
+.nikesection:hover .see {
+    visibility: visible;
+}
+
+#atminfo {
+    height: 190px;
 }
 
 #atm {
@@ -757,6 +876,211 @@ h3 {
 .last {
     visibility: hidden;
 }
+
+
+
+/************* BOTTEGA VENETA ***************/
+
+.bv {
+    background-color:#bfb3ab;
+}
+
+.bv-logo {
+    height: 75px;
+    background-image: url(img/bottega-veneta/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bv-tools {
+    background-image: url(img/bottega-veneta/tools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.atm-video {
+    width: 80%;
+    margin: 0 5%;
+    padding-bottom: 50px;
+}
+
+.bv-sign{
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    background-image: url(img/bottega-veneta/sign.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bv-site{
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    background-image: url(img/bottega-veneta/site);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bv-card{
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    background-image: url(img/bottega-veneta/card.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bv-video{
+    height: 600px;
+}
+
+.bv-chat{
+    height: 500px;
+    margin-top:-20px;
+    margin-bottom: 60px;
+    background-image: url(img/bottega-veneta/chat.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+/************* RAY-BAN ***************/
+
+.rb {
+    background-image: url(img/rayban/ray-background.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rb-logo {
+    background-image: url(img/rayban/ray-ban-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rb-tools {
+    background-image: url(img/rayban/ray-tools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.atm-video {
+    width: 80%;
+    margin: 0 5%;
+    padding-bottom: 50px;
+}
+
+.rb-points{
+    margin-top: -20px;
+}
+
+.rb-mobile-home{
+    height: 600px;
+}
+
+.rb-sunglasses{
+    height: 500px;
+    background-image: url(img/rayban/sunglasses.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rb-men{
+    height: 500px;
+    background-image: url(img/rayban/men.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rb-product{
+    height: 500px;
+    background-image: url(img/rayban/product.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rb-campaign{
+    height: 500px;
+    background-image: url(img/rayban/campaign.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/************* NIKE ***************/
+
+.nike {
+    background-image: url(img/nike/background.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nike-logo {
+    background-image: url(img/nike/nike-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nike-tools {
+    background-image: url(img/atm/sams-tools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nike-manifesto {
+    height: 500px;
+    margin-top: 60px;
+    background-image: url(img/nike/manifesto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nike-timeline {
+    height: 500px;
+    margin: 30px 0;
+    background-image: url(img/nike/timeline);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.atm-video {
+    width: 80%;
+    margin: 30px 5%;
+    padding-bottom: 50px;
+}
+
+.nike-app{
+    height: 600px;
+    margin-top: -250px;
+}
+
+.nike-shirt {
+    height: 400px;
+    background-image: url(img/nike/T-Shirt.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 
 /************* ATM ***************/
@@ -1138,7 +1462,7 @@ h3 {
     /********************************** WORK *********************************/
     .navwrapper {
         left: 30px;
-        top: 0px;
+        top: 30px;
         width: 20%;
     }
     .barrette {
@@ -1175,9 +1499,46 @@ h3 {
     .see {
         display: none;
     }
+    #bv {
+        width: 420px;
+        height: 220px;
+    }
+    .bvsection:hover #bv {
+        animation-play-state: paused;
+    }
+    .bvsection:hover .special {
+        color: #62B4C6;
+    }
+        #rb {
+        width: 395px;
+        height: 210px;
+        margin: 0;
+    }
+    #rb {
+        width: 420px;
+        height: 220px;
+    }
+    .rbsection:hover #rb {
+        animation-play-state: paused;
+    }
+    .rbsection:hover .special {
+        color: #62B4C6;
+    }
+        #nike {
+        width: 395px;
+        height: 210px;
+        margin: 0;
+    }
+    .nikesection:hover #nike {
+        animation-play-state: paused;
+    }
+    .nikesection:hover .special {
+        color: #62B4C6;
+    }
+    
     #atm {
         width: 420px;
-        height: 200px;
+        height: 215px;
     }
     .atmsection:hover #atm {
         animation-play-state: paused;
@@ -1209,7 +1570,7 @@ h3 {
     }
     #mutandae {
         width: 420px;
-        height: 200px;
+        height: 215px;
     }
     .mutandaesection:hover #mutandae {
         animation-play-state: paused;
@@ -1271,6 +1632,72 @@ h3 {
     .next:hover {
         color: #3f3f3f;
     }
+    
+
+/************* BOTTEGA VENETA ***************/
+
+.bv-sign{
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.bv-site{
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.bv-card{
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.bv-video{
+    height: 500px;
+}
+
+.bv-chat{
+    height: 300px;
+    margin-top:-20px;
+    margin-bottom: 60px;
+}
+
+    
+/************* RAY-BAN ***************/
+
+.rb-points{
+    margin-top:0px;
+}
+
+.rb-mobile-home{
+    height: 400px;
+}
+    
+.rb-sunglasses{
+    height: 300px;
+} 
+    
+.rb-men{
+    height: 300px;
+}
+     
+.rb-product{
+    height: 300px;
+}  
+    
+.rb-campaign{
+    height: 300px;
+}
+    
+    /************* NIKE ***************/
+    
+    .nike-timeline {
+    height: 350px;
+    margin-top: 0px;
+}
+
     /************* ATM ***************/
     .atm-personas {
         height: 200px;
@@ -1533,6 +1960,19 @@ h3 {
         margin: 0;
         border-left: none;
     }
+    #bvinfo {
+        height: 0px;
+    }
+    #rbinfo {
+        height: 0px;
+    }
+    #nikeinfo {
+        height: 0px;
+    }
+    #nike {
+        width: 395px;
+        height: 210px;
+    }
     #atminfo {
         height: 0px;
     }
@@ -1627,6 +2067,46 @@ h3 {
         transform: translateY(-170px);
         transition: transform .8s ease-out;
     }
+    
+    /************* RAY-BAN ***************/
+.forrb {
+    background-color: #1e585e;
+    }
+    
+.rb {
+    background-image: url(img/rayban/ray-background-lamdscape.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    
+    /************* NIKE ***************/
+.fornike {
+    background-color: black;
+    }
+    
+.nike {
+    background-image: url(img/nike/nike-cover2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nike-logo {
+    height: 50px;
+}
+
+.nike-manifesto {
+    height: 350px;
+    margin: 30px 0;
+}
+    
+    .nike-timeline {
+    height: 330px;
+    margin-top: 0px;
+}
+    
     /************* ATM ***************/
     .foratm {
         background-color: #CF8230;
@@ -1858,6 +2338,28 @@ h3 {
         width: 90%;
         align-self: flex-start;
     }
+    
+    #bv {
+        width: 375px;
+        height: 200px;
+        margin-top: 20px;
+        order: 1;
+    }
+    
+    
+    #rb {
+        width: 375px;
+        height: 200px;
+        margin-top: 20px;
+        order: 1;
+    }
+    
+    #nike {
+        width: 375px;
+        height: 190px;
+        margin-top: 20px;
+        order: 1;
+    }
     #atm {
         width: 375px;
         height: 200px;
@@ -1933,6 +2435,86 @@ h3 {
         width: 90%;
         margin-left: 20px;
     }
+    
+    /************* BOTTEGA VENETA ***************/
+
+.bv-sign{
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.bv-site{
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.bv-card{
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.bv-video{
+    height: 500px;
+}
+
+.bv-chat{
+    height: 300px;
+    margin-top:-50px;
+    margin-bottom: 0px;
+}
+    
+    
+/************* RAY-BAN ***************/
+    
+    
+.rb {
+    background-image: url(img/rayban/ray-background-portrait.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+    
+.rb-sunglasses{
+    height: 200px;
+    margin-left: 20px;
+}     
+    
+.rb-men{
+    height: 200px;
+    margin-left: 20px;
+}   
+   
+.rb-product{
+    height: 200px;
+    margin-left: 20px;
+}   
+    
+.rb-campaign{
+    height: 200px;
+    margin-left: 20px;
+}
+ 
+        
+    /************* NIKE ***************/
+.fornike {
+    background-color: black;
+    }
+    
+.nike {
+    background-image: url(img/nike/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+    .nike-timeline{
+        height:230px;
+    }
+    
+.nike-shirt {
+    height:300px;
+}
+    
     /************* ATM ***************/
     .foratm {
         background-color: #D58936;
@@ -2068,9 +2650,29 @@ h3 {
         width: 75px;
     }
     /********************************** WORK *********************************/
-    #atm {
+    #bv {
+        width: 320px;
+        height: 160px;
+        margin-left: -20px;
+        margin-top: 20px;
+        order: 1;
+    }
+    #rb {
+        width: 320px;
+        height: 160px;
+        margin-left: -20px;
+        margin-top: 20px;
+        order: 1;
+    }
+    #nike {
         width: 320px;
         height: 150px;
+        margin-top: 20px;
+        order: 1;
+    }
+    #atm {
+        width: 320px;
+        height: 160px;
         margin-left: -20px;
         margin-top: 20px;
         order: 1;
@@ -2092,7 +2694,7 @@ h3 {
     }
     #mutandae {
         width: 320px;
-        height: 150px;
+        height: 160px;
         margin-top: 20px;
         order: 1;
     }
@@ -2102,4 +2704,15 @@ h3 {
         margin-top: 20px;
         order: 1;
     }
+    
+        /************* NIKE ***************/ 
+        .nike-manifesto {
+    height: 330px;
+    margin-top: 0px;
+}
+    
+    .nike-timeline {
+    height: 190px;
+    margin-top: 0px;
+}
 }
